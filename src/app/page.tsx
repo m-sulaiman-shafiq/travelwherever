@@ -6,7 +6,7 @@ import FlightDeals from "@/components/FlightDeals";
 export default function Home() {
   return (
     <>
-      <HeroSection />
+      <HeroSection/>
       <PopularDestinations />
       <FlightDeals />
     </>

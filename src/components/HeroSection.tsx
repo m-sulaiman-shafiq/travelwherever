@@ -1,8 +1,36 @@
+"use client";
+
 import { Plane, MapPin, Calendar, Users, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { useState } from "react";
+import AirportSelect from "./AirportSelect";
+
+export const airports = [
+  { city: "Karachi", code: "KHI", airport: "Jinnah International Airport" },
+  {
+    city: "Lahore",
+    code: "LHE",
+    airport: "Allama Iqbal International Airport",
+  },
+  {
+    city: "Islamabad",
+    code: "ISB",
+    airport: "Islamabad International Airport",
+  },
+  { city: "Dubai", code: "DXB", airport: "Dubai International Airport" },
+  { city: "London", code: "LHR", airport: "Heathrow Airport" },
+  {
+    city: "New York",
+    code: "JFK",
+    airport: "John F Kennedy International Airport",
+  },
+];
 
 const HeroSection = () => {
+  const [from, setFrom] = useState("");
+  const [to, setTo] = useState("");
+
   return (
     <section className="relative min-h-[90vh] bg-gradient-to-b from-[#E6F2FB] via-[#F3F9FE] to-white pt-24 pb-16 overflow-hidden">
       {" "}
@@ -34,27 +62,34 @@ const HeroSection = () => {
           </p>
         </div>
         {/* From TO rectangular box */}
-        <div
-          className="bg-white max-w-4xl mx-auto rounded-2xl shadow-xl ring-1 ring-black/5 p-6 md:p-8 animate-fade-in"
-          style={{ animationDelay: "0.3s" }}
-        >
+        <div className="bg-white max-w-5xl w-full mx-auto rounded-2xl shadow-lg ring-1 ring-black/5 p-6 md:p-8 animate-fade-in">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
             <div className="space-y-2">
               <label className="text-sm font-medium text-muted-foreground flex items-center gap-2">
                 <MapPin className="w-4 h-4" /> From
               </label>
-              <Input
+              {/* <Input
                 placeholder="City or Airport"
                 className="h-12 bg-secondary/50 border-0"
+              /> */}
+              <AirportSelect
+                placeholder="From city or airport"
+                value={from}
+                onChange={setFrom}
               />
             </div>
             <div className="space-y-2">
               <label className="text-sm font-medium text-muted-foreground flex items-center gap-2">
                 <MapPin className="w-4 h-4" /> To
               </label>
-              <Input
+              {/* <Input
                 placeholder="City or Airport"
                 className="h-12 bg-secondary/50 border-0"
+              /> */}
+              <AirportSelect
+                placeholder="To city or airport"
+                value={to}
+                onChange={setTo}
               />
             </div>
             <div className="space-y-2">
