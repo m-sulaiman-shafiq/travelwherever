@@ -67,24 +67,25 @@ export default function AirportSelect({ placeholder, value, onChange }: Props) {
           <CommandEmpty>No airport found.</CommandEmpty>
           <CommandGroup>
             {airports.map((a) => {
-              const label = `${a.city} (${a.code}) — ${a.airport}`;
+              const shortLabel = `${a.city} (${a.code})`;
+              const fullLabel = `${a.city} (${a.code}) — ${a.airport}`;
 
               return (
                 <CommandItem
                   key={a.code}
-                  value={label}
+                  value={fullLabel}
                   onSelect={() => {
-                    onChange(label);
+                    onChange(shortLabel);
                     setOpen(false);
                   }}
                 >
                   <Check
                     className={cn(
                       "mr-2 h-4 w-4",
-                      value === label ? "opacity-100" : "opacity-0",
+                      value === shortLabel ? "opacity-100" : "opacity-0",
                     )}
                   />
-                  {label}
+                  {fullLabel}
                 </CommandItem>
               );
             })}
