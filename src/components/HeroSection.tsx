@@ -127,7 +127,7 @@ const HeroSection = () => {
                 One Way
               </label>
             </div>
-            <Button variant="hero" size="lg" className="w-full sm:w-auto">
+            <Button variant="default" size="lg" className="w-full sm:w-auto">
               Search Flights <ArrowRight className="w-4 h-4" />
             </Button>
           </div>
