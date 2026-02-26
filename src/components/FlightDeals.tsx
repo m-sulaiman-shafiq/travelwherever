@@ -102,7 +102,7 @@ const FlightDeals = () => {
                     </p>
                     <p className="text-xs text-muted-foreground">per person</p>
                   </div>
-                  <Button variant="accent">Book Now</Button>
+                  <Button variant="default">Book Now</Button>
                 </div>
               </div>
             </div>
