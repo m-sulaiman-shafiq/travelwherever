@@ -1,5 +1,6 @@
 import { Plane, Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const Header = () => {
   return (
@@ -9,19 +10,48 @@ const Header = () => {
           <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center">
             <Plane className="w-5 h-5 text-primary-foreground" />
           </div>
-          <span className="text-xl font-bold text-foreground">TravelWherever</span>
+          <span className="text-xl font-bold text-foreground">
+            TravelWherever
+          </span>
         </div>
-        
+
         <nav className="hidden md:flex items-center gap-8">
-          <a href="#" className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors">Flights</a>
-          <a href="#" className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors">Destinations</a>
-          <a href="#" className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors">Deals</a>
-          <a href="#" className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors">About</a>
+          <a
+            href="#"
+            className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors"
+          >
+            Flights
+          </a>
+          <a
+            href="#"
+            className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors"
+          >
+            Destinations
+          </a>
+          <a
+            href="#"
+            className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors"
+          >
+            Deals
+          </a>
+          <a
+            href="#"
+            className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors"
+          >
+            About
+          </a>
         </nav>
-        
+
         <div className="flex items-center gap-3">
-          <Button variant="ghost" className="hidden md:inline-flex">Sign In</Button>
-          <Button className="hidden md:inline-flex">Get Started</Button>
+          <Link href="/signin">
+            <Button variant="ghost" className="hidden md:inline-flex cursor-pointer">
+              Sign In
+            </Button>
+          </Link>
+
+          <Link href="/signup">
+            <Button className="hidden md:inline-flex cursor-pointer">Get Started</Button>
+          </Link>
           <Button variant="ghost" size="icon" className="md:hidden">
             <Menu className="w-5 h-5" />
           </Button>

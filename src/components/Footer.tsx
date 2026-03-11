@@ -157,7 +157,7 @@ const Footer = () => {
         </div>
         <div className="pt-8 border-t border-background/10 text-center">
           <p className="text-background/40 text-sm">
-            © 2025 SkyWay. All rights reserved.
+            © 2026 TravelWherever. All rights reserved.
           </p>
         </div>
       </div>

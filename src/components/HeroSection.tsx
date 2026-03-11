@@ -48,10 +48,11 @@ const HeroSection = () => {
             className="text-4xl md:text-6xl font-bold text-foreground mb-6 animate-fade-in"
             style={{ animationDelay: "0.1s" }}
           >
-            Find Your Perfect&nbsp;
+            Compare&nbsp;
             <span className="bg-gradient-to-r from-blue-500 to-red-600 bg-clip-text text-transparent">
-              Flight Deal
+              Cheap Flights
             </span>
+            &nbsp;Worldwide
           </h1>
           <p
             className="text-lg text-muted-foreground animate-fade-in"
@@ -127,7 +128,11 @@ const HeroSection = () => {
                 One Way
               </label>
             </div>
-            <Button variant="default" size="lg" className="w-full sm:w-auto">
+            <Button
+              variant="default"
+              size="lg"
+              className="w-full sm:w-auto cursor-pointer"
+            >
               Search Flights <ArrowRight className="w-4 h-4" />
             </Button>
           </div>
