@@ -7,7 +7,11 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://travelwherever.com"),
   title: "TravelWherever – Compare Flights & Find the Best Airfare Worldwide",
   description:
-    "Compare flight prices from hundreds of airlines and travel sites. TravelWherever helps you find the cheapest flights worldwide in seconds.",
+    "Compare flight prices from hundreds of airlines and travel sites. TravelWherever helps you find the cheapest flights worldwide in seconds",
+
+  verification: {
+    google: "80lEjeOVXBD3_8ANq3heg1vB74BPdGfTAVJhBKK5um8",
+  },
   alternates: {
     canonical: "/",
   },
