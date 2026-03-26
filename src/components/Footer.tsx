@@ -1,4 +1,5 @@
 import { Plane, Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -71,12 +72,12 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="/blog"
                   className="text-background/60 hover:text-background transition-colors text-sm"
                 >
                   Blog
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
