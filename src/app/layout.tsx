@@ -44,32 +44,7 @@ export default function RootLayout({
         />
         <Header />
         <main className="flex-1 pt-24 px-4">
-          <article
-            className="
-    max-w-3xl mx-auto
-
-    prose lg:prose-lg max-w-none
-
-    prose-h1:text-4xl prose-h1:font-bold prose-h1:mb-6
-    prose-h2:text-2xl prose-h2:font-semibold prose-h2:mt-12 prose-h2:mb-4
-    prose-h3:text-xl prose-h3:font-semibold prose-h3:mt-8
-
-    prose-p:text-gray-700 prose-p:leading-8 prose-p:mb-6
-
-    prose-ul:mt-4 prose-ul:mb-6
-    prose-li:mb-2 prose-li:leading-7
-    prose-li:marker:text-blue-500
-
-    prose-strong:text-black prose-strong:font-semibold
-
-    prose-hr:my-10
-
-    prose-blockquote:border-l-4 prose-blockquote:border-blue-500
-    prose-blockquote:pl-4 prose-blockquote:text-gray-600
-  "
-          >
-            {children}
-          </article>
+          <article>{children}</article>
         </main>
         <Footer />
       </body>
