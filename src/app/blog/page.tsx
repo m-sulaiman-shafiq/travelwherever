@@ -2,7 +2,8 @@ import Link from "next/link";
 
 export const metadata = {
   title: "Blog – TravelWherever",
-  description: "Read all TravelWherever blog posts about travel, flights, and airfare tips.",
+  description:
+    "Read all TravelWherever blog posts about travel, flights, and airfare tips.",
 };
 
 const blogs = [
@@ -25,6 +26,8 @@ export default function BlogPage() {
           <li key={post.slug}>
             <Link
               href={`/blog/${post.slug}`}
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-blue-600 hover:underline"
             >
               {post.title}

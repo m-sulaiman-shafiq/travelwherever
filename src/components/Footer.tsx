@@ -74,8 +74,6 @@ const Footer = () => {
               <li>
                 <Link
                   href="/blog"
-                  target="_blank"
-                  rel="noopener noreferrer"
                   className="text-background/60 hover:text-background transition-colors text-sm"
                 >
                   Blog
