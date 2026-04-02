@@ -9,7 +9,11 @@ export const metadata = {
 const blogs = [
   {
     title: "Compare Flights",
-    slug: "compare-flights ",
+    slug: "compare-flights",
+  },
+  {
+    title: "Flight Prices Going Up?",
+    slug: "flight-pricing-going-up",
   },
   {
     title: "Middle East War Flight Prices",
@@ -26,8 +30,6 @@ export default function BlogPage() {
           <li key={post.slug}>
             <Link
               href={`/blog/${post.slug}`}
-              target="_blank"
-              rel="noopener noreferrer"
               className="text-blue-600 hover:underline"
             >
               {post.title}
