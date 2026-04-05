@@ -5,31 +5,23 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useState } from "react";
 import AirportSelect from "./AirportSelect";
-
-export const airports = [
-  { city: "Karachi", code: "KHI", airport: "Jinnah International Airport" },
-  {
-    city: "Lahore",
-    code: "LHE",
-    airport: "Allama Iqbal International Airport",
-  },
-  {
-    city: "Islamabad",
-    code: "ISB",
-    airport: "Islamabad International Airport",
-  },
-  { city: "Dubai", code: "DXB", airport: "Dubai International Airport" },
-  { city: "London", code: "LHR", airport: "Heathrow Airport" },
-  {
-    city: "New York",
-    code: "JFK",
-    airport: "John F Kennedy International Airport",
-  },
-];
+import { useRouter } from "next/navigation";
 
 const HeroSection = () => {
+  const router = useRouter();
   const [from, setFrom] = useState("");
+  const [passengers, setPassengers] = useState(1);
   const [to, setTo] = useState("");
+  const [date, setDate] = useState(() => {
+    const today = new Date();
+    const yyyy = today.getFullYear();
+    const mm = String(today.getMonth() + 1).padStart(2, "0"); // months are 0-based
+    const dd = String(today.getDate()).padStart(2, "0");
+    return `${yyyy}-${mm}-${dd}`;
+  });
+
+  const [returnDate, setReturnDate] = useState(date);
+  const [tripType, setTripType] = useState<"round" | "oneway">("round");
 
   return (
     <section className="relative min-h-[90vh] bg-gradient-to-b from-[#E6F2FB] via-[#F3F9FE] to-white pt-24 pb-16 overflow-hidden">
@@ -63,16 +55,12 @@ const HeroSection = () => {
           </p>
         </div>
         {/* From TO rectangular box */}
-        <div className="bg-white max-w-5xl w-full mx-auto rounded-2xl shadow-lg ring-1 ring-black/5 p-6 md:p-8 animate-fade-in">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+        <div className="bg-white max-w-5xl w-full mx-auto rounded-2xl shadow-lg ring-1 ring-black/5 p-6 md:p-8 animate-fade-in flex flex-col gap-8">
+          <div className="flex flex-row gap-4">
             <div className="space-y-2">
               <label className="text-sm font-medium text-muted-foreground flex items-center gap-2">
                 <MapPin className="w-4 h-4" /> From
               </label>
-              {/* <Input
-                placeholder="City or Airport"
-                className="h-12 bg-secondary/50 border-0"
-              /> */}
               <AirportSelect
                 placeholder="From city or airport"
                 value={from}
@@ -83,30 +71,45 @@ const HeroSection = () => {
               <label className="text-sm font-medium text-muted-foreground flex items-center gap-2">
                 <MapPin className="w-4 h-4" /> To
               </label>
-              {/* <Input
-                placeholder="City or Airport"
-                className="h-12 bg-secondary/50 border-0"
-              /> */}
               <AirportSelect
                 placeholder="To city or airport"
                 value={to}
                 onChange={setTo}
               />
             </div>
-            <div className="space-y-2">
+            <div className="space-y-2 w-40">
               <label className="text-sm font-medium text-muted-foreground flex items-center gap-2">
-                <Calendar className="w-4 h-4" /> Date
+                <Calendar className="w-4 h-4" /> Departure Date
               </label>
-              <Input type="date" className="h-12 bg-secondary/50 border-0" />
+              <Input
+                type="date"
+                className="h-12 bg-secondary/50 border-0"
+                value={date}
+                onChange={(e) => setDate(e.target.value)}
+              />
             </div>
+            {tripType === "round" && (
+              <div className="space-y-2 w-40">
+                <label className="text-sm font-medium text-muted-foreground flex items-center gap-2">
+                  <Calendar className="w-4 h-4" /> Return Date
+                </label>
+                <Input
+                  type="date"
+                  className="h-12 bg-secondary/50 border-0"
+                  value={returnDate}
+                  onChange={(e) => setReturnDate(e.target.value)}
+                />
+              </div>
+            )}
             <div className="space-y-2">
               <label className="text-sm font-medium text-muted-foreground flex items-center gap-2">
                 <Users className="w-4 h-4" /> Passengers
               </label>
               <Input
                 type="number"
-                placeholder="1"
-                min="1"
+                min={1}
+                value={passengers}
+                onChange={(e) => setPassengers(Number(e.target.value))}
                 className="h-12 bg-secondary/50 border-0"
               />
             </div>
@@ -118,13 +121,20 @@ const HeroSection = () => {
                 <input
                   type="radio"
                   name="trip"
-                  defaultChecked
                   className="accent-primary"
-                />{" "}
+                  checked={tripType === "round"}
+                  onChange={() => setTripType("round")}
+                />
                 Round Trip
               </label>
               <label className="flex items-center gap-2 cursor-pointer">
-                <input type="radio" name="trip" className="accent-primary" />{" "}
+                <input
+                  type="radio"
+                  name="trip"
+                  className="accent-primary"
+                  checked={tripType === "oneway"}
+                  onChange={() => setTripType("oneway")}
+                />
                 One Way
               </label>
             </div>
@@ -132,6 +142,14 @@ const HeroSection = () => {
               variant="default"
               size="lg"
               className="w-full sm:w-auto cursor-pointer"
+              onClick={() => {
+                if (!from || !to) {
+                  alert("Please select departure and destination");
+                  return;
+                }
+
+                router.push(`/flights?from=${from}&to=${to}`);
+              }}
             >
               Search Flights <ArrowRight className="w-4 h-4" />
             </Button>

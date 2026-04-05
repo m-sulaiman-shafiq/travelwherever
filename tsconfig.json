@@ -32,6 +32,6 @@
     "**/*.mts",
     "tailwind.config.js",
     "src/app/blog/my-first-blog/page.mdx"
-  ],
+, "src/app/blog/compare-flights/page.mdx"  ],
   "exclude": ["node_modules"]
 }
