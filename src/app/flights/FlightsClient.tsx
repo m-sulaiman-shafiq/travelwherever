@@ -2,6 +2,12 @@
 
 import { useSearchParams } from "next/navigation";
 
+const airportMap: Record<string, string> = {
+  DXB: "Dubai",
+  DEL: "Delhi (Indira Gandhi International Airport)",
+  LHE: "Lahore",
+};
+
 export default function FlightsClient() {
   const searchParams = useSearchParams();
 
@@ -16,10 +22,9 @@ export default function FlightsClient() {
 
   return (
     <div className="max-w-4xl mx-auto py-10 px-4">
-      <h1 className="text-2xl md:text-3xl font-bold mb-4">
-        Flights from {from} to {to}
+      <h1 className="text-2xl font-bold mb-4">
+        Flights from {airportMap[from!] || from} to {airportMap[to!] || to}
       </h1>
-
       <p className="text-gray-600 mb-6">
         Compare flights from <strong>{from}</strong> to <strong>{to}</strong>.
         Showing best available options (demo).

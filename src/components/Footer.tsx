@@ -11,7 +11,9 @@ const Footer = () => {
               <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center">
                 <Plane className="w-5 h-5 text-primary-foreground" />
               </div>
-              <span className="text-xl font-bold text-background">SkyWay</span>
+              <span className="text-xl font-bold text-background">
+                TravelWherever
+              </span>
             </div>
             <p className="text-background/60 text-sm mb-6">
               Your trusted partner for finding the best flight deals worldwide.
@@ -109,12 +111,12 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="/blog"
                   className="text-background/60 hover:text-background transition-colors text-sm"
                 >
                   Refund Policy
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

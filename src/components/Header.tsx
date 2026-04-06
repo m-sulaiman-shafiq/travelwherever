@@ -6,14 +6,14 @@ const Header = () => {
   return (
     <header className="bg-white fixed top-0 left-0 right-0 z-50 glass-card">
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
-        <div className="flex items-center gap-2">
+        <Link href="/" className="flex items-center gap-2">
           <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center">
             <Plane className="w-5 h-5 text-primary-foreground" />
           </div>
           <span className="text-xl font-bold text-foreground">
             TravelWherever
           </span>
-        </div>
+        </Link>
 
         <nav className="hidden md:flex items-center gap-8">
           <a
@@ -44,13 +44,18 @@ const Header = () => {
 
         <div className="flex items-center gap-3">
           <Link href="/signin">
-            <Button variant="ghost" className="hidden md:inline-flex cursor-pointer">
+            <Button
+              variant="ghost"
+              className="hidden md:inline-flex cursor-pointer"
+            >
               Sign In
             </Button>
           </Link>
 
           <Link href="/signup">
-            <Button className="hidden md:inline-flex cursor-pointer">Get Started</Button>
+            <Button className="hidden md:inline-flex cursor-pointer">
+              Get Started
+            </Button>
           </Link>
           <Button variant="ghost" size="icon" className="md:hidden">
             <Menu className="w-5 h-5" />
