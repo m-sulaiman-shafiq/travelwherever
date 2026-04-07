@@ -6,6 +6,7 @@ import { Input } from "@/components/ui/input";
 import { useState } from "react";
 import AirportSelect from "./AirportSelect";
 import { useRouter } from "next/navigation";
+import { PrimaryToast } from "./ui/PrimaryToast";
 
 const HeroSection = () => {
   const router = useRouter();
@@ -144,10 +145,27 @@ const HeroSection = () => {
               className="w-full sm:w-auto cursor-pointer"
               onClick={() => {
                 if (!from || !to) {
-                  alert("Please select departure and destination");
+                  PrimaryToast({
+                    type: "error",
+                    message: "Please select departure and destination",
+                  });
                   return;
                 }
-
+                if (from === to) {
+                  PrimaryToast({
+                    type: "error",
+                    message: "From and To cannot be the same",
+                  });
+                  setTo("");
+                  setFrom("");
+                  return;
+                }
+                setTimeout(()=>{
+                   PrimaryToast({
+                    type: "success",
+                    message: "Best flight searched",
+                  });
+                }, )
                 router.push(`/flights?from=${from}&to=${to}`);
               }}
             >
@@ -155,7 +173,6 @@ const HeroSection = () => {
             </Button>
           </div>
         </div>
-
         <div
           className="flex flex-wrap justify-center gap-8 md:gap-16 mt-12 animate-fade-in"
           style={{ animationDelay: "0.5s" }}

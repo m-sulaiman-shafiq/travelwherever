@@ -112,7 +112,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="/blog"
+                  href="/refund-policy"
                   className="text-background/60 hover:text-background transition-colors text-sm"
                 >
                   Refund Policy
