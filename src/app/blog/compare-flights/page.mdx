@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata = {
   title:
@@ -50,6 +51,14 @@ export const metadata = {
   approach. This guide breaks it down clearly.
 </p>
 
+<Image
+  src="/infographics-travel.png"
+  alt="Compare international flights across airlines in 2026"
+  width={800}
+  height={450}
+  className="rounded-lg my-6"
+/>
+
 {/* 🔥 SEO KEYWORD SECTIONS START HERE */}
 
 <h2 className="text-2xl font-semibold mt-10 mb-4">
@@ -61,13 +70,14 @@ export const metadata = {
   which ones consistently show the lowest fares, the most accurate pricing, and
   the best user experience.
 </p>
-
-<p className="mb-6">
-  Want to test these platforms yourself?{" "}
-  <Link href="/" className="text-blue-600 underline">
-    Start comparing flights here
-  </Link>
-</p>
+<div className="bg-blue-50 border border-blue-200 p-4 rounded-lg mb-6">
+  <div>
+    <p className=" font-bold">Want to test these platforms yourself?</p>
+    <Link href="/" className="text-blue-600 underline" target="_blank">
+      Start comparing flights here
+    </Link>
+  </div>
+</div>
 <p className="mb-4">
   Not all flight search engines are equal. Some prioritize sponsored listings,
   while others focus on real-time pricing and transparency. Understanding these
@@ -125,37 +135,63 @@ export const metadata = {
 
     <div>
       <h3 className="text-xl font-semibold mb-2">1. Google Flights — Best for Speed and Simplicity</h3>
-      <p className="mb-3">
-        If you want quick results, this is where most journeys begin. Google Flights is extremely fast and clean. You can search routes, compare dates, and track prices within seconds.
-      </p>
-      <p className="font-semibold mb-2">Why it works:</p>
-      <ul className="list-disc pl-6 mb-2 space-y-1">
-        <li>Lightning-fast search results</li>
-        <li>Easy calendar view for cheapest dates</li>
-        <li>Strong price tracking alerts</li>
-      </ul>
-      <p className="font-semibold mb-2">Limitations:</p>
-      <ul className="list-disc pl-6 space-y-1">
-        <li>Doesn’t always show smaller airlines or hidden deals</li>
-        <li>Focuses more on major carriers</li>
-      </ul>
-    </div>
+
+<Image
+  src="/google-flights.png"
+  alt="Compare international flights with google flights"
+  width={600}
+  height={300}
+  className="rounded-lg my-6"
+/>
+
+<p className="mb-3">
+If you want quick results, this is where most journeys begin. Google Flights is extremely fast and clean. You can search routes, compare dates, and track prices within seconds.
+</p>
+<p className="font-semibold mb-2">Why it works:</p>
+<ul className="list-disc pl-6 mb-2 space-y-1">
+<li>Lightning-fast search results</li>
+<li>Easy calendar view for cheapest dates</li>
+<li>Strong price tracking alerts</li>
+</ul>
+<p className="font-semibold mb-2">Limitations:</p>
+<ul className="list-disc pl-6 space-y-1">
+<li>Doesn’t always show smaller airlines or hidden deals</li>
+<li>Focuses more on major carriers</li>
+</ul>
+</div>
 
     <div>
       <h3 className="text-xl font-semibold mb-2">2. Skyscanner — Best for International Flexibility</h3>
-      <p className="mb-3">
-        If you're flexible with destinations or dates, this platform shines. Skyscanner searches across hundreds of airlines and travel sites, helping you uncover cheaper routes others miss.
-      </p>
-      <p className="font-semibold mb-2">What makes it powerful:</p>
-      <ul className="list-disc pl-6 space-y-1">
-        <li>“Everywhere” search (find cheapest countries to fly to)</li>
-        <li>Strong coverage of budget airlines</li>
-        <li>Monthly price comparison view</li>
-      </ul>
-    </div>
+
+<Image
+  src="/Skyscanner.jpg"
+  alt="Compare international flights with skyscanner"
+  width={600}
+  height={300}
+  className="rounded-lg my-6"
+/>
+
+<p className="mb-3">
+If you're flexible with destinations or dates, this platform shines. Skyscanner searches across hundreds of airlines and travel sites, helping you uncover cheaper routes others miss.
+</p>
+<p className="font-semibold mb-2">What makes it powerful:</p>
+<ul className="list-disc pl-6 space-y-1">
+<li>“Everywhere” search (find cheapest countries to fly to)</li>
+<li>Strong coverage of budget airlines</li>
+<li>Monthly price comparison view</li>
+</ul>
+</div>
 
     <div>
       <h3 className="text-xl font-semibold mb-2">3. Momondo — Best for Finding the Absolute Cheapest Flights</h3>
+
+  <Image
+  src="/momondo.png"
+  alt="Compare international flights with momondo"
+  width={600}
+  height={300}
+  className="rounded-lg my-6"
+/>    
       <p className="mb-3">
         This is where things get interesting. According to 2026 testing, Momondo found the cheapest fare more often than competitors.
       </p>
@@ -181,6 +217,13 @@ Compare flights from Dubai to Delhi (Indira Gandhi International Airport)
   <h3 className="text-xl font-semibold mb-2">
     4. Kayak — Best for Tracking Prices Over Time
   </h3>
+  <Image
+    src="/kayak.jpg"
+    alt="Compare international flights with momondo"
+    width={600}
+    height={300}
+    className="rounded-lg my-6"
+  />
   <p className="mb-3">
     Kayak is less about instant booking and more about strategy. It allows you
     to monitor flight prices and identify the best time to book.
