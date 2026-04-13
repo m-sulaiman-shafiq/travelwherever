@@ -4,7 +4,7 @@ import { useSearchParams } from "next/navigation";
 
 const airportMap: Record<string, string> = {
   DXB: "Dubai",
-  DEL: "Delhi (Indira Gandhi International Airport)",
+  DEL: "Delhi (Indira Gandhi International Airport.)",
   LHE: "Lahore",
 };
 
