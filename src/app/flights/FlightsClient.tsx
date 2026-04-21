@@ -19,7 +19,6 @@ export default function FlightsClient() {
     { airline: "Airline B", price: 150, duration: "2h 50m" },
     { airline: "Airline C", price: 180, duration: "4h 10m" },
   ];
-
   return (
     <div className="max-w-4xl mx-auto py-10 px-4">
       <h1 className="text-2xl font-bold mb-4">
