@@ -86,6 +86,7 @@ const HeroSection = () => {
                 type="date"
                 className="h-12 bg-secondary/50 border-0"
                 value={date}
+                min={new Date().toISOString().split("T")[0]}
                 onChange={(e) => setDate(e.target.value)}
               />
             </div>
@@ -97,6 +98,7 @@ const HeroSection = () => {
                 <Input
                   type="date"
                   className="h-12 bg-secondary/50 border-0"
+                  min={new Date().toISOString().split("T")[0]}
                   value={returnDate}
                   onChange={(e) => setReturnDate(e.target.value)}
                 />
@@ -160,13 +162,26 @@ const HeroSection = () => {
                   setFrom("");
                   return;
                 }
-                setTimeout(()=>{
-                   PrimaryToast({
+                setTimeout(() => {
+                  PrimaryToast({
                     type: "success",
                     message: "Best flight searched",
                   });
-                }, )
-                router.push(`/flights?from=${from}&to=${to}`);
+                });
+                const finalDate =
+                  date || new Date().toISOString().split("T")[0];
+
+                const getCode = (value: string) => {
+                  const match = value.match(/\((.*?)\)/);
+                  return match ? match[1] : value;
+                };
+
+                const fromCode = getCode(from);
+                const toCode = getCode(to);
+console.log(fromCode, toCode)
+                router.push(
+                  `/flights?from=${fromCode}&to=${toCode}&date=${finalDate}`,
+                );
               }}
             >
               Search Flights <ArrowRight className="w-4 h-4" />

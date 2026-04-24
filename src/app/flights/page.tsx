@@ -3,8 +3,10 @@ import FlightsClient from "./FlightsClient";
 
 // ✅ ADD IT HERE (top of file)
 export async function generateMetadata({ searchParams }: any) {
-  const from = searchParams?.from || "Origin";
-  const to = searchParams?.to || "Destination";
+ const params = await searchParams;
+
+  const from = params?.from || "Origin";
+  const to = params?.to || "Destination";
 
   return {
     title: `Flights from ${from} to ${to} | Compare Prices`,
