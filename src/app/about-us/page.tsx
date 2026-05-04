@@ -5,48 +5,57 @@ import Link from "next/link";
 export default function AboutPage() {
   return (
     <div className="min-h-screen bg-gray-50 text-gray-800">
-      <main className="max-w-4xl mx-auto px-6 py-12">
-        <h1 className="text-4xl font-bold mb-4">About Us</h1>
+      <main className="max-w-3xl mx-auto px-6 py-12">
+        <img
+          src="/ceo-photo.png"
+          alt="Muhammad S - Founder of TravelWherever"
+          className="w-50 h-50 rounded-full mb-6"
+        />
+        <h1 className="text-4xl font-bold mb-6">About TravelWherever</h1>
 
-        <p className="text-gray-600 mb-8">
-          TravelWherever is built to make flight search simple, transparent, and accessible for everyone.
+        <p className="text-gray-600 mb-6">
+          Hi, I’m <strong>Muhammad Sulaiman Shafiq</strong>, the person behind
+          TravelWherever. I built this platform to solve a simple problem I kept
+          running into: finding clear, comparable flight options without jumping
+          between multiple websites.
         </p>
 
-        <section className="space-y-6">
-          <h2 className="text-2xl font-semibold">Our Mission</h2>
-          <p className="text-gray-600">
-            Our mission is to help travelers find the best flight options quickly without hidden fees or confusing interfaces. We aim to simplify the process of comparing flights across multiple providers in one place.
-          </p>
-        </section>
+        <p className="text-gray-600 mb-6">
+          TravelWherever is a flight comparison tool that helps you explore
+          routes, compare prices, and find available flights across different
+          airlines and providers in one place. It does not sell tickets directly
+          — instead, it connects you to third-party booking platforms where you
+          can complete your purchase.
+        </p>
 
-        <section className="mt-10 space-y-6">
-          <h2 className="text-2xl font-semibold">What We Do</h2>
-          <p className="text-gray-600">
-            TravelWherever is a flight comparison platform. Using our search tool, users can explore flight prices, routes, and availability from various airlines and travel providers.
-          </p>
-          <p className="text-gray-600">
-            We do not sell tickets directly. Instead, we connect you with trusted third-party providers where you can complete your booking securely.
-          </p>
-        </section>
+        <p className="text-gray-600 mb-6">
+          I started working on this project as both a learning experience and a
+          step toward building a real travel product. The goal is to create
+          something fast, simple, and genuinely useful — without clutter, hidden
+          fees, or confusing interfaces.
+        </p>
 
-        <section className="mt-10 space-y-6">
-          <h2 className="text-2xl font-semibold">Why Choose Us</h2>
-          <ul className="list-disc pl-6 text-gray-600 space-y-2">
-            <li>Simple and fast flight comparison</li>
-            <li>No hidden fees from our platform</li>
-            <li>Access to multiple airlines and providers</li>
-            <li>Clean, user-friendly experience</li>
-          </ul>
-        </section>
+        <p className="text-gray-600 mb-6">
+          TravelWherever is currently based in Pakistan and is being developed
+          as an independent project with plans to grow into a larger travel
+          platform over time.
+        </p>
 
-        <section className="mt-10 space-y-6">
-          <h2 className="text-2xl font-semibold">Transparency & Trust</h2>
-          <p className="text-gray-600">
-            We believe in transparency. Flight prices and availability are provided by third-party services and may change at any time. For more details, please review our legal pages.
-          </p>
+        <p className="text-gray-600 mb-6">
+          If you have feedback, suggestions, or just want to say hi, feel free
+          to{" "}
+          <Link href="/contact" className="text-blue-600 underline">
+            contact me
+          </Link>
+          . Your input helps improve the platform.
+        </p>
 
+        <div className="mt-10 p-6 bg-white rounded-2xl shadow-sm">
+          <h2 className="text-xl font-semibold mb-2">Transparency</h2>
           <p className="text-gray-600">
-            Learn more about how we handle your data in our{" "}
+            TravelWherever shows data provided by third-party services. Prices
+            and availability can change, and bookings are handled externally.
+            For more details, you can review the{" "}
             <Link href="/privacy-policy" className="text-blue-600 underline">
               Privacy Policy
             </Link>
@@ -59,24 +68,6 @@ export default function AboutPage() {
               Terms of Service
             </Link>
             .
-          </p>
-        </section>
-
-        <section className="mt-10 space-y-6">
-          <h2 className="text-2xl font-semibold">Contact</h2>
-          <p className="text-gray-600">
-            Have questions or feedback? We’d love to hear from you.
-          </p>
-
-          <Link href="/contact-us" className="text-blue-600 underline">
-            Contact Us
-          </Link>
-        </section>
-
-        <div className="mt-12 bg-white p-6 rounded-2xl shadow-sm">
-          <h3 className="text-xl font-semibold mb-2">Our Vision</h3>
-          <p className="text-gray-600">
-            We are building a modern travel platform that empowers users to explore the world with confidence, clarity, and control over their choices.
           </p>
         </div>
       </main>

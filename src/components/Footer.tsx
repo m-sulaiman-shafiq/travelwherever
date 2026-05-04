@@ -39,7 +39,8 @@ const Footer = () => {
                 <Instagram className="w-5 h-5 text-background/80" />
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/company/travelwherever"
+                target="_blank"
                 className="w-10 h-10 rounded-lg bg-background/10 flex items-center justify-center hover:bg-background/20 transition-colors"
               >
                 <Linkedin className="w-5 h-5 text-background/80" />
@@ -66,12 +67,12 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="/press"
                   className="text-background/60 hover:text-background transition-colors text-sm"
                 >
                   Press
-                </a>
+                </Link>
               </li>
               <li>
                 <Link
