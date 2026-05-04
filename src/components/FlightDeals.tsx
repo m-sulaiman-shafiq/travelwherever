@@ -42,7 +42,7 @@ const FlightDeals = () => {
           <div>
             <p className="text-primary font-medium mb-2">Best Deals</p>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-              Today's Top Flight Offers
+              Popular Routes
             </h2>
           </div>
           <Button variant="outline">

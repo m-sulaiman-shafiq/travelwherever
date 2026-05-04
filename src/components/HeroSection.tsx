@@ -35,7 +35,7 @@ const HeroSection = () => {
       <div className="container mx-auto px-4 relative">
         <div className="max-w-3xl mx-auto text-center mb-12">
           <p className="text-[#1183D4] font-medium mb-4 animate-fade-in">
-            Compare 500+ Airlines Worldwide
+            Search global airlines
           </p>
           <h1
             className="text-4xl md:text-6xl font-bold text-foreground mb-6 animate-fade-in"
@@ -178,7 +178,7 @@ const HeroSection = () => {
 
                 const fromCode = getCode(from);
                 const toCode = getCode(to);
-console.log(fromCode, toCode)
+                console.log(fromCode, toCode);
                 router.push(
                   `/flights?from=${fromCode}&to=${toCode}&date=${finalDate}`,
                 );
@@ -186,23 +186,6 @@ console.log(fromCode, toCode)
             >
               Search Flights <ArrowRight className="w-4 h-4" />
             </Button>
-          </div>
-        </div>
-        <div
-          className="flex flex-wrap justify-center gap-8 md:gap-16 mt-12 animate-fade-in"
-          style={{ animationDelay: "0.5s" }}
-        >
-          <div className="text-center">
-            <p className="text-3xl font-bold text-foreground">500+</p>
-            <p className="text-sm text-muted-foreground">Airlines</p>
-          </div>
-          <div className="text-center">
-            <p className="text-3xl font-bold text-foreground">10K+</p>
-            <p className="text-sm text-muted-foreground">Routes</p>
-          </div>
-          <div className="text-center">
-            <p className="text-3xl font-bold text-foreground">2M+</p>
-            <p className="text-sm text-muted-foreground">Happy Travelers</p>
           </div>
         </div>
       </div>

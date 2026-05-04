@@ -50,20 +50,20 @@ const Footer = () => {
             <h4 className="font-bold text-background mb-4">Company</h4>
             <ul className="space-y-3">
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="/about-us"
                   className="text-background/60 hover:text-background transition-colors text-sm"
                 >
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="/careers"
                   className="text-background/60 hover:text-background transition-colors text-sm"
                 >
-                  Careers
-                </a>
+                  Careers{" "}
+                </Link>
               </li>
               <li>
                 <a
@@ -87,28 +87,28 @@ const Footer = () => {
             <h4 className="font-bold text-background mb-4">Support</h4>
             <ul className="space-y-3">
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="/help-center"
                   className="text-background/60 hover:text-background transition-colors text-sm"
                 >
                   Help Center
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="/contact-us"
                   className="text-background/60 hover:text-background transition-colors text-sm"
                 >
                   Contact Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="/faqs"
                   className="text-background/60 hover:text-background transition-colors text-sm"
                 >
                   FAQs
-                </a>
+                </Link>
               </li>
               <li>
                 <Link
@@ -124,36 +124,36 @@ const Footer = () => {
             <h4 className="font-bold text-background mb-4">Legal</h4>
             <ul className="space-y-3">
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="/privacy-policy"
                   className="text-background/60 hover:text-background transition-colors text-sm"
                 >
                   Privacy Policy
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="/terms-of-service"
                   className="text-background/60 hover:text-background transition-colors text-sm"
                 >
                   Terms of Service
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="/cookie-policy"
                   className="text-background/60 hover:text-background transition-colors text-sm"
                 >
                   Cookie Policy
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="/disclaimer"
                   className="text-background/60 hover:text-background transition-colors text-sm"
                 >
-                  Licenses
-                </a>
+                  Disclaimer
+                </Link>
               </li>
             </ul>
           </div>
