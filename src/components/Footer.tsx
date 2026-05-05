@@ -21,26 +21,29 @@ const Footer = () => {
             </p>
             <div className="flex gap-4">
               <a
-                href="#"
+                target="_blank"
+                href="https://www.facebook.com/profile.php?id=61589064821205"
                 className="w-10 h-10 rounded-lg bg-background/10 flex items-center justify-center hover:bg-background/20 transition-colors"
               >
                 <Facebook className="w-5 h-5 text-background/80" />
               </a>
               <a
-                href="#"
+                target="_blank"
+                href="https://x.com/travelwherever_"
                 className="w-10 h-10 rounded-lg bg-background/10 flex items-center justify-center hover:bg-background/20 transition-colors"
               >
                 <Twitter className="w-5 h-5 text-background/80" />
               </a>
               <a
-                href="#"
+                target="_blank"
+                href="https://www.instagram.com/travelwherever.dxb/"
                 className="w-10 h-10 rounded-lg bg-background/10 flex items-center justify-center hover:bg-background/20 transition-colors"
               >
                 <Instagram className="w-5 h-5 text-background/80" />
               </a>
               <a
-                href="https://www.linkedin.com/company/travelwherever"
                 target="_blank"
+                href="https://www.linkedin.com/company/travelwherever"
                 className="w-10 h-10 rounded-lg bg-background/10 flex items-center justify-center hover:bg-background/20 transition-colors"
               >
                 <Linkedin className="w-5 h-5 text-background/80" />
