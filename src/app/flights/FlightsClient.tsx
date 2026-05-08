@@ -49,7 +49,6 @@ export default function FlightsClient() {
         );
 
         const data = await res.json();
-console.log("RAW API RESPONSE:", data || "hello");
         // ✅ Handle FlightAPI response structure
         if (data?.itineraries) {
           const mappedFlights = data.itineraries.map((item: any) => {

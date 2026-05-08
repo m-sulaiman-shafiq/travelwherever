@@ -28,6 +28,14 @@ const faqs = [
     q: "Do you offer refunds?",
     a: "Refunds depend on the airline or booking provider. Check their policy or visit our Refund Policy page for guidance.",
   },
+  {
+    q: "Which website is best to compare international flights?",
+    a: "There is no single “best” website for every route. However, Google Flights, Skyscanner, and Momondo are the most reliable platforms. Google Flights is best for speed and price tracking, Skyscanner is great for flexible international searches, and Momondo often finds the cheapest hidden fares.",
+  },
+  {
+    q: "Is Skyscanner better than Google Flights?",
+    a: "It depends on how you search. Skyscanner is better for flexible travel dates, multiple destinations, and budget airline coverage. Google Flights is better for fast results, price tracking, and a cleaner interface. Most travelers use both together to get the best deal.",
+  },
 ];
 
 export default function FAQPage() {
@@ -58,9 +66,7 @@ export default function FAQPage() {
               </button>
 
               {openIndex === index && (
-                <div className="px-5 pb-5 text-gray-600">
-                  {faq.a}
-                </div>
+                <div className="px-5 pb-5 text-gray-600">{faq.a}</div>
               )}
             </div>
           ))}
