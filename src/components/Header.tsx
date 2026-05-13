@@ -17,52 +17,33 @@ const Header = () => {
             TravelWherever
           </span>
         </Link>
-
-        <nav className="hidden md:flex items-center gap-8">
-          <a
-            href="#"
-            className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors"
-          >
-            Flights
-          </a>
-          <a
-            href="#"
-            className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors"
-          >
-            Destinations
-          </a>
-          <a
-            href="#"
-            className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors"
-          >
-            Deals
-          </a>
-          <a
-            href="#"
-            className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors"
-          >
-            About
-          </a>
-        </nav>
-
-        <div className="flex items-center gap-3">
-          <Link href="/signin">
-            <Button
-              variant="ghost"
-              className="hidden md:inline-flex cursor-pointer"
+        <div className="absolute left-1/2 -translate-x-1/2">
+          <nav className="hidden md:flex items-center gap-8">
+            <a
+              href="#"
+              className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors"
             >
-              Sign In
-            </Button>
-          </Link>
-
-          <Link href="/signup">
-            <Button className="hidden md:inline-flex cursor-pointer">
-              Get Started
-            </Button>
-          </Link>
-          <Button variant="ghost" size="icon" className="md:hidden">
-            <Menu className="w-5 h-5" />
-          </Button>
+              Flights
+            </a>
+            <a
+              href="#"
+              className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors"
+            >
+              Destinations
+            </a>
+            <a
+              href="#"
+              className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors"
+            >
+              Deals
+            </a>
+            <a
+              href="#"
+              className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors"
+            >
+              About
+            </a>
+          </nav>
         </div>
       </div>
     </header>

@@ -180,7 +180,7 @@ const HeroSection = () => {
                 const toCode = getCode(to);
                 console.log(fromCode, toCode);
                 router.push(
-                  `/flights?from=${fromCode}&to=${toCode}&date=${finalDate}`,
+                  `/api/flights?from=${fromCode}&to=${toCode}&date=${finalDate}`,
                 );
               }}
             >
