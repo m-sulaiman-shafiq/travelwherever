@@ -47,25 +47,24 @@ export default function FlightsClient() {
         const res = await fetch(
           `/api/flights?from=${from}&to=${to}&date=${date}`,
         );
+        const result = await res.json();
 
-        const data = await res.json();
-        // ✅ Handle FlightAPI response structure
-        if (data?.itineraries) {
-          const mappedFlights = data.itineraries.map((item: any) => {
-            const leg = item.legs?.[0];
-            return {
-              airline: leg?.carriers?.marketing?.[0] || "Unknown Airline",
-              price: item.price?.amount || 0,
-              departure: leg?.departure || "",
-              arrival: leg?.arrival || "",
-              duration: leg?.durationInMinutes || 0,
-              from: leg?.origin || "",
-              to: leg?.destination || "",
-            };
-          });
+        // Since your route.ts now returns { success: true, data: [...] }
+        if (result?.success && result.data) {
+          // We map the new beautiful structure to your Flight type
+          const mappedFlights = result.data.map((item: any) => ({
+            airline: item.airline.code,
+            logo: item.airline.logo, // Added logo
+            price: item.price.raw,
+            departure: item.schedule.departure,
+            arrival: item.schedule.arrival,
+            duration: item.schedule.duration, // Already formatted as "Xh Ym"
+            from: item.route.origin,
+            to: item.route.destination,
+          }));
+
           setFlights(mappedFlights);
         } else {
-          console.error("Invalid API response:", data);
           setFlights([]);
         }
       } catch (error) {
@@ -76,9 +75,7 @@ export default function FlightsClient() {
       }
     };
 
-    if (from && to && date) {
-      fetchFlights();
-    }
+    if (from && to && date) fetchFlights();
   }, [from, to, date]);
 
   const formatTime = (dateString: string) => {
@@ -126,19 +123,19 @@ export default function FlightsClient() {
             <div className="flex justify-between items-center text-sm text-gray-600">
               <div>
                 <p className="font-semibold text-black">
-                  {formatTime(flight.departure)}
+                  {flight.departure}
                 </p>
                 <p>{flight.from}</p>
               </div>
 
               <div className="text-center">
-                <p className="text-xs">{formatDuration(flight.duration)}</p>
+                <p className="text-xs">{flight.duration}</p>
                 <p className="text-xs">Direct</p>
               </div>
 
               <div className="text-right">
                 <p className="font-semibold text-black">
-                  {formatTime(flight.arrival)}
+                  {flight.arrival}
                 </p>
                 <p>{flight.to}</p>
               </div>

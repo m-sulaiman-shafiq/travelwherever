@@ -179,9 +179,7 @@ const HeroSection = () => {
                 const fromCode = getCode(from);
                 const toCode = getCode(to);
                 console.log(fromCode, toCode);
-                router.push(
-                  `/api/flights?from=${fromCode}&to=${toCode}&date=${finalDate}`,
-                );
+            router.push(`/flights?from=${fromCode}&to=${toCode}&date=${finalDate}`);
               }}
             >
               Search Flights <ArrowRight className="w-4 h-4" />
