@@ -18,7 +18,7 @@ const Header = () => {
           </span>
         </Link>
         <div className="absolute left-1/2 -translate-x-1/2">
-          <nav className="hidden md:flex items-center gap-8">
+          {/* <nav className="hidden md:flex items-center gap-8">
             <a
               href="#"
               className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors"
@@ -43,7 +43,7 @@ const Header = () => {
             >
               About
             </a>
-          </nav>
+          </nav> */}
         </div>
       </div>
     </header>

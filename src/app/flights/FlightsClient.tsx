@@ -111,9 +111,11 @@ export default function FlightsClient() {
             key={index}
             className="border rounded-xl p-4 mb-4 shadow-sm hover:shadow-md transition"
           >
+            <p className="font-semibold text-lg">{date}</p>
             {/* Top Row */}
             <div className="flex justify-between items-center mb-2">
               <p className="font-semibold text-lg">{flight.airline}</p>
+
               <p className="text-green-600 font-bold text-lg">
                 ${flight.price}
               </p>
@@ -122,9 +124,7 @@ export default function FlightsClient() {
             {/* Middle Row */}
             <div className="flex justify-between items-center text-sm text-gray-600">
               <div>
-                <p className="font-semibold text-black">
-                  {flight.departure}
-                </p>
+                <p className="font-semibold text-black">{flight.departure}</p>
                 <p>{flight.from}</p>
               </div>
 
@@ -134,9 +134,7 @@ export default function FlightsClient() {
               </div>
 
               <div className="text-right">
-                <p className="font-semibold text-black">
-                  {flight.arrival}
-                </p>
+                <p className="font-semibold text-black">{flight.arrival}</p>
                 <p>{flight.to}</p>
               </div>
             </div>
