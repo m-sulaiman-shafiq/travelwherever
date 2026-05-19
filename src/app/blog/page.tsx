@@ -17,6 +17,16 @@ const blogs = [
     image:
       "https://images.unsplash.com/photo-1529070538774-1843cb3265df?auto=format&fit=crop&w=1200&q=80",
   },
+    {
+    title: "Skyscanner Vs Google",
+    slug: "skyscanner-vs-google",
+    category: "Flight Hacks",
+    excerpt:
+      "Is Skyscanner better than Google for flight comparisons?",
+    readTime: "4 min read",
+    image:
+      "https://blogthattravels.com/wp-content/uploads/2024/07/Screenshot-2024-07-29-at-10.00.52%E2%80%AFAM.png",
+  },
   {
     title: "Why Flight Prices Keep Going Up",
     slug: "flight-pricing-going-up",
