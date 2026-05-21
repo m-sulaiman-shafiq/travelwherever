@@ -20,7 +20,7 @@ const blogs = [
     {
     title: "Skyscanner Vs Google",
     slug: "skyscanner-vs-google",
-    category: "Flight Hacks",
+    category: "Flight websites comparison",
     excerpt:
       "Is Skyscanner better than Google for flight comparisons?",
     readTime: "4 min read",
@@ -46,6 +46,16 @@ const blogs = [
     readTime: "5 min read",
     image:
       "https://images.unsplash.com/photo-1500835556837-99ac94a94552?auto=format&fit=crop&w=1200&q=80",
+  },
+    {
+    title: "Momondo vs Skyscanner",
+    slug: "momondo-vs-skyscanner",
+    category: "Flight websites comparison",
+    excerpt:
+      "How good is Momondo than Skyscanners?",
+    readTime: "5 min read",
+    image:
+      "https://thumbs.dreamstime.com/b/view-plane-above-clouds-wing-airplane-flying-evening-162279974.jpg",
   },
 ];
 
