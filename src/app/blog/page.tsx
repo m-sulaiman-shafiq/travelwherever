@@ -57,6 +57,16 @@ const blogs = [
     image:
       "https://thumbs.dreamstime.com/b/view-plane-above-clouds-wing-airplane-flying-evening-162279974.jpg",
   },
+      {
+    title: "Lahore To Dubai Flights",
+    slug: "lahore-to-dubai-flights",
+    category: "Specific Flights Comparison",
+    excerpt:
+      "How cheap and frequent flights operate from Lahore to Dubai",
+    readTime: "5 min read",
+    image:
+      "https://trwlbw5ifim8svtf.private.blob.vercel-storage.com/Lahore%20to%20Dubai.png?vercel-blob-delegation=eyJzdG9yZUlkIjoic3RvcmVfVHJ3bGJ3NWlGaW04c1ZUZiIsIm93bmVySWQiOiJ0ZWFtX1c0Q1M5WnZDVXVNZGZ0VE81eFptS1pLZiIsInBhdGhuYW1lIjoiKiIsIm9wZXJhdGlvbnMiOlsiZ2V0IiwiaGVhZCJdLCJ2YWxpZFVudGlsIjoxNzc5NTEyMjYzNjExLCJpYXQiOjE3Nzk0NjkwNjE2NzZ9.46AOMAPFlgYdw4-AAVFBp8vbMX0tOzgHdHQEFZ2jJ7w&vercel-blob-signature=KZtR15IsC-7sD1aSkQ53SlN3PLHJc4gcOja64qSglNU",
+  },
 ];
 
 export default function BlogPage() {
