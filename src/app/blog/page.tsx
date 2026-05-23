@@ -17,12 +17,11 @@ const blogs = [
     image:
       "https://images.unsplash.com/photo-1529070538774-1843cb3265df?auto=format&fit=crop&w=1200&q=80",
   },
-    {
+  {
     title: "Skyscanner Vs Google",
     slug: "skyscanner-vs-google",
     category: "Flight websites comparison",
-    excerpt:
-      "Is Skyscanner better than Google for flight comparisons?",
+    excerpt: "Is Skyscanner better than Google for flight comparisons?",
     readTime: "4 min read",
     image:
       "https://blogthattravels.com/wp-content/uploads/2024/07/Screenshot-2024-07-29-at-10.00.52%E2%80%AFAM.png",
@@ -47,25 +46,30 @@ const blogs = [
     image:
       "https://images.unsplash.com/photo-1500835556837-99ac94a94552?auto=format&fit=crop&w=1200&q=80",
   },
-    {
+  {
     title: "Momondo vs Skyscanner",
     slug: "momondo-vs-skyscanner",
     category: "Flight websites comparison",
-    excerpt:
-      "How good is Momondo than Skyscanners?",
+    excerpt: "How good is Momondo than Skyscanners?",
     readTime: "5 min read",
     image:
       "https://thumbs.dreamstime.com/b/view-plane-above-clouds-wing-airplane-flying-evening-162279974.jpg",
   },
-      {
+  {
     title: "Lahore To Dubai Flights",
     slug: "lahore-to-dubai-flights",
     category: "Specific Flights Comparison",
-    excerpt:
-      "How cheap and frequent flights operate from Lahore to Dubai",
+    excerpt: "How cheap and frequent flights operate from Lahore to Dubai",
     readTime: "5 min read",
-    image:
-      "https://trwlbw5ifim8svtf.private.blob.vercel-storage.com/Lahore%20to%20Dubai.png?vercel-blob-delegation=eyJzdG9yZUlkIjoic3RvcmVfVHJ3bGJ3NWlGaW04c1ZUZiIsIm93bmVySWQiOiJ0ZWFtX1c0Q1M5WnZDVXVNZGZ0VE81eFptS1pLZiIsInBhdGhuYW1lIjoiKiIsIm9wZXJhdGlvbnMiOlsiZ2V0IiwiaGVhZCJdLCJ2YWxpZFVudGlsIjoxNzc5NTEyMjYzNjExLCJpYXQiOjE3Nzk0NjkwNjE2NzZ9.46AOMAPFlgYdw4-AAVFBp8vbMX0tOzgHdHQEFZ2jJ7w&vercel-blob-signature=KZtR15IsC-7sD1aSkQ53SlN3PLHJc4gcOja64qSglNU",
+    image: "http://travelwherever.com/lahore-to-dubai.png",
+  },
+  {
+    title: "Cheapest Flight Days",
+    slug: "cheapest-day-flights",
+    category: "When/how to book",
+    excerpt: "What days you can get cheapest flights",
+    readTime: "5 min read",
+    image: "http://travelwherever.com/cheapest-flight-days.jpg",
   },
 ];
 
