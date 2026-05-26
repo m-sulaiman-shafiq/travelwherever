@@ -71,6 +71,14 @@ const blogs = [
     readTime: "5 min read",
     image: "http://travelwherever.com/cheapest-flight-days.jpg",
   },
+  {
+    title: "Karachi To Dubai Flights",
+    slug: "karachi-to-dubai-flights",
+    category: "Specific Flights Comparison",
+    excerpt: "How cheap and frequent flights operate from Karachi to Dubai",
+    readTime: "5 min read",
+    image: "http://travelwherever.com/karachi-to-dubai.jpg",
+  },
 ];
 
 export default function BlogPage() {
