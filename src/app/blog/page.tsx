@@ -79,6 +79,14 @@ const blogs = [
     readTime: "5 min read",
     image: "http://travelwherever.com/karachi-to-dubai.jpg",
   },
+  {
+    title: "Emirates vs Qatar Airways",
+    slug: "emirates-vs-qatar-airways",
+    category: "Airlines Comparison",
+    excerpt: "Which is better for luxury travel: Emirates or Qatar Airways?",
+    readTime: "5 min read",
+    image: "http://travelwherever.com/emirates-vs-qatar.png",
+  },
 ];
 
 export default function BlogPage() {
