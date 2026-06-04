@@ -20,7 +20,7 @@ const blogs = [
   {
     title: "Skyscanner Vs Google",
     slug: "skyscanner-vs-google",
-    category: "Flight websites comparison",
+    category: "Flights comparison",
     excerpt: "Is Skyscanner better than Google for flight comparisons?",
     readTime: "4 min read",
     image:
@@ -49,7 +49,7 @@ const blogs = [
   {
     title: "Momondo vs Skyscanner",
     slug: "momondo-vs-skyscanner",
-    category: "Flight websites comparison",
+    category: "Flights comparison",
     excerpt: "How good is Momondo than Skyscanners?",
     readTime: "5 min read",
     image:
@@ -58,7 +58,7 @@ const blogs = [
   {
     title: "Lahore To Dubai Flights",
     slug: "lahore-to-dubai-flights",
-    category: "Specific Flights Comparison",
+    category: "Flights comparison",
     excerpt: "How cheap and frequent flights operate from Lahore to Dubai",
     readTime: "5 min read",
     image: "http://travelwherever.com/lahore-to-dubai.png",
@@ -74,7 +74,7 @@ const blogs = [
   {
     title: "Karachi To Dubai Flights",
     slug: "karachi-to-dubai-flights",
-    category: "Specific Flights Comparison",
+    category: "Flights comparison",
     excerpt: "How cheap and frequent flights operate from Karachi to Dubai",
     readTime: "5 min read",
     image: "http://travelwherever.com/karachi-to-dubai.jpg",
@@ -86,6 +86,14 @@ const blogs = [
     excerpt: "Which is better for luxury travel: Emirates or Qatar Airways?",
     readTime: "5 min read",
     image: "http://travelwherever.com/emirates-vs-qatar.png",
+  },
+  {
+    title: "Pakistan to UK Cheapest Flights",
+    slug: "pakistan-to-uk-cheapest-flights",
+    category: "Flights comparison",
+    excerpt: "Compare flights for travelling between Pakistan and UK",
+    readTime: "5 min read",
+    image: "http://travelwherever.com/pakistan-to-uk-cheapest-flights.png",
   },
 ];
 
@@ -103,7 +111,7 @@ export default function BlogPage() {
 
       {/* Category Pills */}
       <div className="flex gap-3 mb-10 flex-wrap">
-        {["All", "Flight Hacks", "Price Trends", "Travel News"].map((cat) => (
+        {["All", "Flights comparison", "Airlines Comparison", "When/how to book", "Travel News"].map((cat) => (
           <span
             key={cat}
             className="px-4 py-1 rounded-full bg-gray-100 text-sm text-gray-700"
