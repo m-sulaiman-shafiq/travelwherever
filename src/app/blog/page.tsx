@@ -95,6 +95,14 @@ const blogs = [
     readTime: "5 min read",
     image: "http://travelwherever.com/pakistan-to-uk-cheapest-flights.png",
   },
+    {
+    title: "How far in Advance to Book a Flight?",
+    slug: "how-far-in-advance-to-book-a-flight",
+    category: "When/ How To Book",
+    excerpt: "How far in advance should you book your air ticket?",
+    readTime: "5 min read",
+    image: "http://travelwherever.com/how-far-in-advance-to-book-a-flight.png",
+  },
 ];
 
 export default function BlogPage() {
