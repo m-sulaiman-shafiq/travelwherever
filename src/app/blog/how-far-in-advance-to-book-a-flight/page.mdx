@@ -1,4 +1,5 @@
 import JsonLd from "@/components/JsonLd";
+import Link from "next/link";
 
 export const metadata = {
   title:
@@ -172,35 +173,37 @@ images: [
   </header>
 
   <section className="prose prose-lg max-w-none">
-    <p>
-      If you've ever searched for flights and watched prices jump overnight,
-      you're not imagining things.
-    </p>
+   <p className="text-lg text-gray-700 leading-8 mb-6">
+  If you've ever searched for flights and watched prices jump overnight,
+  you're not imagining things.
+</p>
 
-    <p>
-      Airline pricing has become increasingly dynamic in recent years.
-      Modern revenue management systems constantly adjust fares based on demand,
-      seat availability, competition, seasonality, and booking behavior.
-    </p>
+<p className="text-lg text-gray-700 leading-8 mb-6">
+  Airline pricing has become increasingly dynamic in recent years.
+  Modern revenue management systems constantly adjust fares based on demand,
+  seat availability, competition, seasonality, and booking behavior.
+</p>
 
-    <p>
-      As a result, one of the most common travel questions remains:
-    </p>
+<p className="text-lg text-gray-700 leading-8 mb-6">
+  As a result, one of the most common travel questions remains:
+</p>
 
-    <blockquote className="border-l-4 border-blue-500 pl-4 italic my-6">
-      How far in advance should I book a flight?
-    </blockquote>
+<blockquote className="my-8 border-l-4 border-gray-300 pl-6">
+  <p className="text-2xl md:text-3xl font-semibold text-gray-900 italic leading-relaxed">
+    How far in advance should I book a flight?
+  </p>
+</blockquote>
 
-    <p>
-      The answer depends on where you're flying, when you're traveling,
-      and whether you're booking during a high-demand season.
-    </p>
+<p className="text-lg text-gray-700 leading-8 mb-6">
+  The answer depends on where you're flying, when you're traveling,
+  and whether you're booking during a high-demand season.
+</p>
 
-    <p>
-      In this guide, we'll break down the latest airfare data, explain why booking
-      too early can sometimes cost more, and show the booking windows that tend to
-      produce the best prices in 2026.
-    </p>
+<p className="text-lg text-gray-700 leading-8 mb-8">
+  In this guide, we'll break down the latest airfare data, explain why booking
+  too early can sometimes cost more, and show the booking windows that tend to
+  produce the best prices in 2026.
+</p>
 
     <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 my-10">
       <h2 className="text-2xl font-bold mt-0 mb-4">
@@ -301,7 +304,7 @@ images: [
 </p>
 
 <p className="text-lg text-gray-700 leading-8 mb-6">
-  Waiting until the final two weeks is usually a mistake.
+  So, to <Link href="/blog/compare-flights" className=" text-blue-600" target="_blank">compare flights </Link>and buy until the final two weeks is usually a mistake.
 </p>
 
 <p className="text-lg text-gray-700 leading-8 mb-6">
@@ -381,6 +384,7 @@ images: [
   </p>
 </div>
 
+<p>Read also: <Link href="/blog/compare-flights" className=" text-blue-600" target="_blank">Pakistan to UK Cheapest flights</Link></p>
 <p className="text-lg text-gray-700 leading-8 mb-6">
   During these periods, the best strategy is simple:
 </p>
