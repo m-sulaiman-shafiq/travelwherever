@@ -95,13 +95,21 @@ const blogs = [
     readTime: "5 min read",
     image: "http://travelwherever.com/pakistan-to-uk-cheapest-flights.png",
   },
-    {
+  {
     title: "How far in Advance to Book a Flight?",
     slug: "how-far-in-advance-to-book-a-flight",
     category: "When/ How To Book",
     excerpt: "How far in advance should you book your air ticket?",
     readTime: "5 min read",
     image: "http://travelwherever.com/how-far-in-advance-to-book-a-flight.png",
+  },
+  {
+    title: "Hidden City Ticketing in 2026: Does It Still Work and Is It Risky?",
+    slug: "hidden-city-ticketing",
+    category: "When/ How To Book",
+    excerpt: "Booking ticket to a neighbouring city.",
+    readTime: "5 min read",
+    image: "http://travelwherever.com/hidden-city-ticketing.png",
   },
 ];
 
@@ -119,7 +127,13 @@ export default function BlogPage() {
 
       {/* Category Pills */}
       <div className="flex gap-3 mb-10 flex-wrap">
-        {["All", "Flights comparison", "Airlines Comparison", "When/how to book", "Travel News"].map((cat) => (
+        {[
+          "All",
+          "Flights comparison",
+          "Airlines Comparison",
+          "When/how to book",
+          "Travel News",
+        ].map((cat) => (
           <span
             key={cat}
             className="px-4 py-1 rounded-full bg-gray-100 text-sm text-gray-700"
