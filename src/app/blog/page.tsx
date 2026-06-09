@@ -111,6 +111,16 @@ const blogs = [
     readTime: "5 min read",
     image: "http://travelwherever.com/hidden-city-ticketing.png",
   },
+  {
+    title:
+      "Kayak vs Google Flights for International Travel: Which Flight Search Tool Is Better in 2026?",
+    slug: "kayak-vs-google-flights-for-international-travel",
+    category: "Flights somparison",
+    excerpt: "Either Kayak or Google is better for flight comparison",
+    readTime: "5 min read",
+    image:
+      "http://travelwherever.com/kayak-vs-google-flights-for-international-travel.png",
+  },
 ];
 
 export default function BlogPage() {

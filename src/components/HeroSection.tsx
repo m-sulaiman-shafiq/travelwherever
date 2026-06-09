@@ -57,8 +57,8 @@ const HeroSection = () => {
         </div>
         {/* From TO rectangular box */}
         <div className="bg-white max-w-5xl w-full mx-auto rounded-2xl shadow-lg ring-1 ring-black/5 p-6 md:p-8 animate-fade-in flex flex-col gap-8">
-          <div className="flex flex-row gap-4">
-            <div className="space-y-2">
+          <div className="flex flex-col md:flex-row gap-4">
+            <div className="space-y-2 flex-1">
               <label className="text-sm font-medium text-muted-foreground flex items-center gap-2">
                 <MapPin className="w-4 h-4" /> From
               </label>
@@ -68,7 +68,7 @@ const HeroSection = () => {
                 onChange={setFrom}
               />
             </div>
-            <div className="space-y-2">
+            <div className="space-y-2 flex-1">
               <label className="text-sm font-medium text-muted-foreground flex items-center gap-2">
                 <MapPin className="w-4 h-4" /> To
               </label>
@@ -78,7 +78,7 @@ const HeroSection = () => {
                 onChange={setTo}
               />
             </div>
-            <div className="space-y-2 w-40">
+            <div className="space-y-2 flex-1 w-40">
               <label className="text-sm font-medium text-muted-foreground flex items-center gap-2">
                 <Calendar className="w-4 h-4" /> Departure Date
               </label>
@@ -91,7 +91,7 @@ const HeroSection = () => {
               />
             </div>
             {tripType === "round" && (
-              <div className="space-y-2 w-40">
+              <div className="space-y-2 flex-1 w-40">
                 <label className="text-sm font-medium text-muted-foreground flex items-center gap-2">
                   <Calendar className="w-4 h-4" /> Return Date
                 </label>
@@ -104,7 +104,7 @@ const HeroSection = () => {
                 />
               </div>
             )}
-            <div className="space-y-2">
+            <div className="space-y-2 flex-1">
               <label className="text-sm font-medium text-muted-foreground flex items-center gap-2">
                 <Users className="w-4 h-4" /> Passengers
               </label>
