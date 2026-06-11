@@ -121,6 +121,14 @@ const blogs = [
     image:
       "http://travelwherever.com/kayak-vs-google-flights-for-international-travel.png",
   },
+  {
+    title: "Tuesday Flight Booking Myth: Does It Actually Save Money?",
+    slug: "tuesday-flight-booking-myth",
+    category: "When/ How To Book",
+    excerpt: "Is Tuesday a real money-saving day for flights?",
+    readTime: "5 min read",
+    image: "http://travelwherever.com/tuesday-flight-booking-myth.png",
+  },
 ];
 
 export default function BlogPage() {
