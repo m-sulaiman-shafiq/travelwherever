@@ -23,28 +23,25 @@ const blogs = [
     category: "Flights comparison",
     excerpt: "Is Skyscanner better than Google for flight comparisons?",
     readTime: "4 min read",
-    image:
-      "https://blogthattravels.com/wp-content/uploads/2024/07/Screenshot-2024-07-29-at-10.00.52%E2%80%AFAM.png",
+    image: "http://travelwherever.com/skyscanner-vs-google.png",
   },
   {
     title: "Why Flight Prices Keep Going Up",
-    slug: "flight-pricing-going-up",
+    slug: "flight-prices-going-up",
     category: "Price Trends",
     excerpt:
       "Understand the real reasons behind rising airfare and how timing affects your ticket cost.",
     readTime: "6 min read",
-    image:
-      "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1200&q=80",
+    image: "http://travelwherever.com/flight-prices-going-up.jpg",
   },
   {
-    title: "How Global Events Impact Flights",
+    title: "How Middle East Conflict Imacted Flight Prices",
     slug: "middle-east-war-flight-prices",
     category: "Travel News",
     excerpt:
       "A breakdown of how geopolitical tensions and conflicts influence global flight pricing.",
     readTime: "5 min read",
-    image:
-      "https://images.unsplash.com/photo-1500835556837-99ac94a94552?auto=format&fit=crop&w=1200&q=80",
+    image: "http://travelwherever.com/middle-east-war-flight-prices.png",
   },
   {
     title: "Momondo vs Skyscanner",
@@ -52,8 +49,7 @@ const blogs = [
     category: "Flights comparison",
     excerpt: "How good is Momondo than Skyscanners?",
     readTime: "5 min read",
-    image:
-      "https://thumbs.dreamstime.com/b/view-plane-above-clouds-wing-airplane-flying-evening-162279974.jpg",
+    image: "http://travelwherever.com/momondo-vs-skyscanner.png",
   },
   {
     title: "Lahore To Dubai Flights",
@@ -77,7 +73,7 @@ const blogs = [
     category: "Flights comparison",
     excerpt: "How cheap and frequent flights operate from Karachi to Dubai",
     readTime: "5 min read",
-    image: "http://travelwherever.com/karachi-to-dubai.jpg",
+    image: "http://travelwherever.com/karachi-to-dubai-flights.jpg",
   },
   {
     title: "Emirates vs Qatar Airways",

@@ -1,20 +1,201 @@
+import JsonLd from "@/components/JsonLd";
+import Link from "next/link";
+
 export const metadata = {
-  title:
-    "Why Flight Prices Are Rising in 2026 (War Impact on International Travel)",
+  title: "Why Flight Prices Are Rising in 2026 (War Impact Explained)",
+
   description:
-    "Flight prices are increasing in 2026 due to global conflicts and airspace disruptions. Learn how war impacts airfare and how to still book cheap flights.",
+    "Flight prices are rising in 2026 due to Middle East conflict disruptions, airspace closures, fuel cost spikes, and rerouted airline operations. Here’s the full impact explained.",
+
+  alternates: {
+    canonical:
+      "https://www.travelwherever.com/blog/middle-east-war-flight-prices",
+  },
+
+  openGraph: {
+    title: "Why Flight Prices Are Rising in 2026 (War Impact Explained)",
+
+    description:
+      "Explore how the 2026 Middle East conflict is affecting global flight prices, causing reroutes, higher fuel costs, and rising airfare worldwide.",
+
+    url:
+      "https://www.travelwherever.com/blog/middle-east-war-flight-prices",
+
+    siteName: "Travel Wherever",
+    type: "article",
+    locale: "en_US",
+
+    images: [
+      {
+        url:
+          "https://www.travelwherever.com/images/blog/middle-east-war-flight-prices.png",
+        width: 1200,
+        height: 630,
+        alt: "Middle East war impact on flight prices 2026",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+
+    title: "Why Flight Prices Are Rising in 2026 (War Impact Explained)",
+
+    description:
+      "How Middle East tensions and airspace closures are driving up global flight prices in 2026.",
+
+    images: [
+      "https://www.travelwherever.com/images/blog/middle-east-war-flight-prices.png",
+    ],
+  },
 };
 
-<article className="max-w-4xl mx-auto px-4 py-10 text-gray-800 leading-relaxed">
+<>
+  <JsonLd
+    data={{
+      "@context": "https://schema.org",
+      "@type": "Article",
+
+      headline: "Why Flight Prices Are Rising in 2026 (War Impact Explained)",
+
+      description:
+        "An in-depth analysis of how the 2026 Middle East conflict is affecting global airline pricing, routes, fuel costs, and travel disruptions.",
+
+      image:
+        "https://www.travelwherever.com/images/blog/middle-east-war-flight-prices.png",
+
+      author: {
+        "@type": "Organization",
+        name: "Travel Wherever",
+      },
+
+      publisher: {
+        "@type": "Organization",
+        name: "Travel Wherever",
+        logo: {
+          "@type": "ImageObject",
+          url: "https://www.travelwherever.com/logo_travelwherever.png",
+        },
+      },
+
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id":
+          "https://www.travelwherever.com/blog/middle-east-war-flight-prices",
+      },
+
+      datePublished: "2026-06-16",
+      dateModified: "2026-06-16",
+    }}
+  />
+
+  <JsonLd
+    data={{
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Why are flight prices increasing in 2026?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text:
+              "Flight prices are rising due to geopolitical tensions in the Middle East, airspace closures, rerouted flights, and increased fuel costs affecting airline operations.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How does war affect airline ticket prices?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text:
+              "War disrupts airspace routes, forcing longer flight paths, higher fuel consumption, and operational delays, all of which increase airline costs and ticket prices.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Did Middle East airspace closures impact global flights?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text:
+              "Yes, closures over countries like Iran, Iraq, and neighboring regions forced airlines to reroute major Europe-Asia flights, increasing travel time and costs.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Will flight prices go down if tensions ease?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text:
+              "If diplomatic agreements lead to airspace reopening, airlines may reduce fuel surcharges and rerouting costs, potentially lowering ticket prices gradually.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What was the impact of the June 2026 Iran–US developments?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text:
+              "The 15 June 2026 MoU signaled possible de-escalation, and markets began pricing in potential airspace normalization, which may reduce volatility in flight pricing.",
+          },
+        },
+      ],
+    }}
+  />
+
+  <JsonLd
+    data={{
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Home",
+          item: "https://www.travelwherever.com",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Blog",
+          item: "https://www.travelwherever.com/blog",
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          name: "Flight Prices War Impact 2026",
+          item:
+            "https://www.travelwherever.com/blog/middle-east-war-flight-prices",
+        },
+      ],
+    }}
+  />
+</>
+
+<article className="max-w-4xl mx-auto py-10 text-gray-800 leading-relaxed">
 
 <h1 className="text-3xl font-bold mb-6">
   Why Flight Prices Are Rising in 2026 (War Impact Explained)
 </h1>
+<div className="mt-2 mb-6 text-sm text-gray-500 border-l-4 border-blue-500 pl-3">
+  <span className="font-medium text-blue-600">Updated on 16 June 2026</span> — This article now includes the latest Iran–US diplomatic developments and their impact on global flight pricing.
+</div>
+<img
+  src="/middle-east-war-flight-prices.png"
+  alt="middle east war and flight prices impact"
+  className="rounded-2xl w-full object-cover"
+/>
 
-<p>
+<p className="text-xl text-gray-700 leading-relaxed py-4">
   The ongoing conflict involving the United States, Israel, and Iran has had
   widespread effects—extending far beyond geopolitics into the global aviation
   sector.
+</p>
+<p className="mb-6">
+  <strong>Update (June 2026):</strong> On 15 June 2026, a preliminary memorandum of understanding (MoU) was reportedly signed between Iran and the United States aimed at de-escalating regional tensions.
+  Markets are now closely watching Friday, 19 June 2026, when a more formal agreement is expected to be announced, which could directly influence airspace reopening and aviation stability across the Middle East.
 </p>
 
 <p className="mb-6">
@@ -26,6 +207,36 @@ export const metadata = {
 <h2 className="text-2xl font-semibold mt-8 mb-4">
   What Happened to Airspace and Routes
 </h2>
+
+<h2 className="text-2xl font-semibold mt-8 mb-4">
+  Recent Diplomatic Shift (June 2026) and Market Reaction
+</h2>
+
+<p className="mb-4">
+  The aviation market has started reacting to a major geopolitical development: the 15 June 2026 MoU between Iran and the United States, which signaled a potential easing of tensions in the region.
+</p>
+
+<p className="mb-4">
+  If the expected formal agreement on 19 June 2026 is confirmed, analysts believe it could trigger a phased reopening of restricted airspace across parts of the Middle East, especially over key transit corridors linking Europe and Asia.
+</p>
+
+<p className="mb-4">
+  Airlines and investors are already pricing in this possibility. While rerouting costs remain high for now, forward-looking flight pricing models have become more volatile, with some carriers cautiously adjusting long-haul fares in anticipation of reduced detours.
+</p>
+
+<ul className="list-disc pl-6 mb-6 space-y-2">
+  <li>
+    Potential partial reopening of key air corridors could reduce flight times on Europe–Asia routes.
+  </li>
+  <li>
+    Oil and jet fuel markets may stabilize if geopolitical risk premiums decline.
+  </li>
+  <li>
+    Airlines could gradually unwind emergency fuel surcharges if stability holds.
+  </li>
+</ul>
+
+<h2 className="text-2xl font-semibold mt-8 mb-4">Historical Perspective of Middle East Conflict 2026 & its impact it made on Flight prices</h2>
 
 <p className="mb-4">
   After major strikes in late February 2026, multiple countries including Iran,
@@ -50,7 +261,7 @@ export const metadata = {
 </h2>
 
 <p className="mb-4">
-  Two main economic forces are driving up international flight prices:
+  Two main economic forces have driven up international flight prices in recent months, although the situation may begin shifting if the June 2026 diplomatic developments lead to de-escalation:
 </p>
 
 <ul className="list-disc pl-6 mb-6 space-y-2">
@@ -71,7 +282,7 @@ export const metadata = {
 </h2>
 
 <p className="mb-4">
-  Passengers around the world are already feeling the impact:
+  Passengers around the world are already feeling the impact, although some airlines are beginning to factor in potential route normalization following recent diplomatic progress in June 2026.
 </p>
 
 <ul className="list-disc pl-6 mb-6 space-y-2">
@@ -109,32 +320,29 @@ export const metadata = {
 <h2 className="text-2xl font-semibold mt-8 mb-4">Summary</h2>
 
 <p className="mb-4">
-  The Iran–Israel–US war has disrupted global aviation in multiple ways:
+  The Iran–Israel–US conflict has disrupted global aviation in multiple ways, although recent diplomatic developments in June 2026 may begin to shift the outlook:
 </p>
 
 <ul className="list-disc pl-6 mb-6 space-y-2">
   <li>
-    Airspace closures have forced reroutes and cancellations.
-
+    Airspace closures have forced reroutes, cancellations, and longer flight paths across major Europe–Asia corridors.
   </li>
   <li>
-    Fuel prices have surged, leading to higher airline costs.
-
+    Fuel prices surged earlier in the crisis due to instability in the Middle East, significantly increasing airline operating costs.
   </li>
   <li>
-    Ticket prices on international routes have increased as carriers absorb and
-    pass on these costs.
+    Ticket prices on international routes increased as airlines passed on higher fuel and operational costs to passengers.
+  </li>
+  <li>
+    A 15 June 2026 MoU between Iran and the United States has introduced early signs of de-escalation, with markets now watching the expected 19 June 2026 agreement for confirmation of a more stable phase.
   </li>
 </ul>
 
-<p className="mb-4 font-medium">
-  For travelers, this means planning ahead, expecting higher fares, and watching
-  fuel price trends as an indirect indicator of flight cost movement.
+<p className="mb-4 font-medium text-xl">
+  For travelers, this means continued caution in the short term—expecting volatile fares and route changes—but also potential gradual relief if airspace restrictions ease following diplomatic progress.
 </p>
 
 <p>
-  As conflicts evolve, so will travel patterns and price dynamics. Understanding
-  the economic context helps travelers make smarter booking decisions.
+  As geopolitical conditions evolve, so will global travel patterns and pricing dynamics. Staying aware of both conflict developments and diplomatic breakthroughs can help travelers make more informed and cost-effective booking decisions.
 </p>
-
 </article>

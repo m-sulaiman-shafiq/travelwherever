@@ -1,9 +1,176 @@
+import JsonLd from "@/components/JsonLd";
+import Link from "next/link";
+
 export const metadata = {
-  title:
-    "Are Flight Prices Going Up in 2026? (Real Data + How to Still Find Cheap Flights)",
+  title: "Why Flight Pricing Is Going Up in 2026 (Global Airline Cost Analysis)",
+
   description:
-    "Flight prices are rising in 2026. See real airfare trends, why tickets are getting expensive, and how to still find cheap international flights.",
+    "Flight prices are rising globally in 2026 due to fuel costs, geopolitical tensions, airline capacity limits, and demand changes. Here’s the full breakdown of why airfare is increasing.",
+
+  alternates: {
+    canonical: "https://www.travelwherever.com/blog/flight-prices-going-up",
+  },
+
+  openGraph: {
+    title: "Why Flight Pricing Is Going Up in 2026",
+
+    description:
+      "A detailed explanation of why flight prices are increasing worldwide in 2026, including fuel costs, demand shifts, and airline operational changes.",
+
+    url: "https://www.travelwherever.com/blog/flight-prices-going-up",
+
+    siteName: "Travel Wherever",
+    type: "article",
+    locale: "en_US",
+
+    images: [
+      {
+        url:
+          "https://www.travelwherever.com/images/blog/flight-prices-going-up.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Flight prices increasing globally 2026",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+
+    title: "Why Flight Pricing Is Going Up in 2026",
+
+    description:
+      "Explore the real reasons behind rising global airfare in 2026 including fuel, demand, and airline capacity issues.",
+
+    images: [
+      "https://www.travelwherever.com/images/blog/flight-prices-going-up.jpg",
+    ],
+  },
 };
+
+<>
+  <JsonLd
+    data={{
+      "@context": "https://schema.org",
+      "@type": "Article",
+
+      headline: "Why Flight Pricing Is Going Up in 2026",
+
+      description:
+        "A detailed analysis of rising global flight prices in 2026 and the economic, geopolitical, and operational factors driving airfare increases.",
+
+      image:
+        "https://www.travelwherever.com/images/blog/flight-prices-going-up.jpg",
+
+      author: {
+        "@type": "Organization",
+        name: "Travel Wherever",
+      },
+
+      publisher: {
+        "@type": "Organization",
+        name: "Travel Wherever",
+        logo: {
+          "@type": "ImageObject",
+          url: "https://www.travelwherever.com/logo_travelwherever.png",
+        },
+      },
+
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id":
+          "https://www.travelwherever.com/blog/flight-prices-going-up",
+      },
+
+      datePublished: "2026-06-16",
+      dateModified: "2026-06-16",
+    }}
+  />
+
+  <JsonLd
+    data={{
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Why are flight prices increasing in 2026?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text:
+              "Flight prices are increasing due to higher fuel costs, geopolitical instability, airline capacity constraints, and strong post-pandemic travel demand.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Will flight prices go down again?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text:
+              "Prices may stabilize if fuel costs drop or airline capacity increases, but short-term volatility is expected to continue due to global uncertainty.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What is the biggest reason for rising airfare?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text:
+              "Jet fuel prices and operational costs are the biggest contributors, followed closely by geopolitical disruptions and route inefficiencies.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Do wars and conflicts affect flight prices?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text:
+              "Yes, conflicts can lead to airspace closures, rerouted flights, longer travel times, and higher fuel consumption, all of which increase ticket prices.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Are airlines making more profit from higher prices?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text:
+              "Not always. Higher prices often offset increased fuel, operational, and routing costs rather than directly increasing airline profit margins.",
+          },
+        },
+      ],
+    }}
+  />
+
+  <JsonLd
+    data={{
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Home",
+          item: "https://www.travelwherever.com",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Blog",
+          item: "https://www.travelwherever.com/blog",
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          name: "Flight Pricing Going Up",
+          item:
+            "https://www.travelwherever.com/blog/flight-prices-going-up",
+        },
+      ],
+    }}
+  />
+</>
 
 <article className="max-w-4xl mx-auto px-4 py-10 text-gray-800 leading-relaxed">
 
@@ -11,7 +178,13 @@ export const metadata = {
   Are Flight Prices Going Up in 2026? Real Trends (Smart Booking Tips)
 </h1>
 
-<p className="mb-4">
+<img
+  src="/flight-prices-going-up.jpg"
+  alt="flight prices going up"
+  className="rounded-2xl w-full object-cover"
+/>
+
+<p className="mb-4 mt-4">
   <strong>Short answer:</strong> Yes — flight prices are rising in 2026, and
   several global factors are pushing airfares higher faster than expected.
 </p>

@@ -1,67 +1,178 @@
+import JsonLd from "@/components/JsonLd";
 import Link from "next/link";
-import Image from "next/image";
 
 export const metadata = {
-  title:
-    "Lahore to Dubai Flights: Cheapest Months, Airlines & Booking Tips for 2026",
+  title: "Lahore to Dubai Flights: Prices, Airlines & Latest 2026 Travel Guide",
+
   description:
-    "Find the cheapest months to fly Lahore to Dubai, compare Emirates, Flydubai, PIA & Air Arabia, and learn booking strategies that actually save money in 2026.",
-  keywords: [
-    "Lahore to Dubai flights",
-    "LHE to DXB flights",
-    "cheap Lahore to Dubai tickets",
-    "Flydubai Lahore",
-    "Emirates Lahore to Dubai",
-    "PIA Lahore Dubai",
-    "Air Arabia Lahore Dubai",
-    "Lahore Dubai airfare",
-    "Dubai flights from Pakistan",
-    "cheapest month to fly to Dubai",
-  ],
-  authors: [{ name: "Travel Wherever" }],
-  creator: "Travel Wherever",
-  publisher: "Travel Wherever",
-  metadataBase: new URL("https://www.travelwherever.com"),
+    "Find the latest Lahore to Dubai flight prices, airlines, schedules, and travel tips for 2026. Compare fares, flight duration, and booking insights for this popular route.",
 
-alternates: {
-canonical:
-"https://www.travelwherever.com/blog/lahore-to-dubai-flights",
-},
+  alternates: {
+    canonical:
+      "https://www.travelwherever.com/blog/lahore-to-dubai-flights",
+  },
 
-openGraph: {
-title:
-"Lahore to Dubai Flights: Cheapest Months & Airlines 2026",
-description:
-"Compare Lahore to Dubai airfare, airlines, baggage rules, and discover the cheapest months to travel in 2026.",
-url:
-"https://www.travelwherever.com/blog/lahore-to-dubai-flights",
-siteName: "Travel Wherever",
-locale: "en_US",
-type: "article",
-images: [
-{
-url: "/blog/lahore-to-dubai-flights-og.jpg",
-width: 1200,
-height: 630,
-alt: "Lahore to Dubai flights guide 2026",
-},
-],
-},
+  openGraph: {
+    title: "Lahore to Dubai Flights: Prices, Airlines & 2026 Guide",
 
-twitter: {
-card: "summary_large_image",
-title:
-"Lahore to Dubai Flights: Cheapest Months & Airlines 2026",
-description:
-"Compare Emirates, Flydubai, PIA & Air Arabia fares from Lahore to Dubai and learn the best booking strategies.",
-images: ["/blog/lahore-to-dubai-flights-og.jpg"],
-},
+    description:
+      "Everything you need to know about Lahore to Dubai flights in 2026 including ticket prices, airlines, flight duration, and booking tips.",
 
-robots: {
-index: true,
-follow: true,
-},
+    url:
+      "https://www.travelwherever.com/blog/lahore-to-dubai-flights",
+
+    siteName: "Travel Wherever",
+    type: "article",
+    locale: "en_US",
+
+    images: [
+      {
+        url:
+          "https://www.travelwherever.com/images/blog/lahore-to-dubai-flights.png",
+        width: 1200,
+        height: 630,
+        alt: "Lahore to Dubai flights 2026 guide",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+
+    title: "Lahore to Dubai Flights: Prices & 2026 Guide",
+
+    description:
+      "Compare Lahore to Dubai flights, airlines, and ticket prices in 2026. Find the cheapest and fastest options easily.",
+
+    images: [
+      "https://www.travelwherever.com/images/blog/lahore-to-dubai-flights.png",
+    ],
+  },
 };
+
+<>
+  <JsonLd
+    data={{
+      "@context": "https://schema.org",
+      "@type": "Article",
+
+      headline: "Lahore to Dubai Flights: Prices, Airlines & 2026 Guide",
+
+      description:
+        "A complete guide to Lahore to Dubai flights including pricing trends, airlines, schedules, and travel tips for 2026.",
+
+      image:
+        "https://www.travelwherever.com/images/blog/lahore-to-dubai-flights.png",
+
+      author: {
+        "@type": "Organization",
+        name: "Travel Wherever",
+      },
+
+      publisher: {
+        "@type": "Organization",
+        name: "Travel Wherever",
+        logo: {
+          "@type": "ImageObject",
+          url: "https://www.travelwherever.com/logo_travelwherever.png",
+        },
+      },
+
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id":
+          "https://www.travelwherever.com/blog/lahore-to-dubai-flights",
+      },
+
+      datePublished: "2026-06-06",
+      dateModified: "2026-06-16",
+    }}
+  />
+
+  <JsonLd
+    data={{
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "How long is a flight from Lahore to Dubai?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text:
+              "The average direct flight from Lahore to Dubai takes around 3 to 3.5 hours depending on airline and weather conditions.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Which airlines fly from Lahore to Dubai?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text:
+              "Airlines such as Emirates, flydubai, PIA, Airblue, Air Sial, and Fly Jinnah operate flights on this route.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How much is a Lahore to Dubai ticket in 2026?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text:
+              "Ticket prices vary by season, but economy fares typically range from budget deals during off-peak times to higher prices during peak travel seasons.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is there a direct flight from Lahore to Dubai?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text:
+              "Yes, multiple airlines operate direct flights daily between Allama Iqbal International Airport (LHE) and Dubai International Airport (DXB).",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What is the distance between Lahore and Dubai by air?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text:
+              "The aerial distance between Lahore and Dubai is approximately 1,990 km, making it a short international flight of around 3 hours.",
+          },
+        },
+      ],
+    }}
+  />
+
+  <JsonLd
+    data={{
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Home",
+          item: "https://www.travelwherever.com",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Blog",
+          item: "https://www.travelwherever.com/blog",
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          name: "Lahore to Dubai Flights",
+          item:
+            "https://www.travelwherever.com/blog/lahore-to-dubai-flights",
+        },
+      ],
+    }}
+  />
+</>
 
 <article className="max-w-4xl mx-auto px-4 py-10 text-gray-800 leading-relaxed">
   

@@ -1,72 +1,194 @@
+import JsonLd from "@/components/JsonLd";
 import Link from "next/link";
 
 export const metadata = {
-  title:
-    "Momondo vs Skyscanner: Tested 20 Routes, Here’s What Won (2026)",
+  title: "Momondo vs Skyscanner: Tested Routes, Here’s What Won (2026 Guide)",
+
   description:
-    "We tested Momondo vs Skyscanner across 20 real flight routes in 2026 to discover which platform actually finds cheaper fares, offers better flexibility tools, and provides the smoothest booking experience.",
-  keywords: [
-    "Momondo vs Skyscanner",
-    "Skyscanner review 2026",
-    "Momondo review 2026",
-    "best flight comparison website",
-    "cheap international flights",
-    "flight search engine comparison",
-    "Skyscanner vs Momondo",
-    "best website to compare flights",
-    "flight booking comparison 2026",
-    "cheapest flight search engine"
-  ],
-  authors: [{ name: "Travel Wherever" }],
-  creator: "Travel Wherever",
-  publisher: "Travel Wherever",
-  metadataBase: new URL("https://www.travelwherever.com"),
+    "We tested Momondo vs Skyscanner across real flight routes in 2026 to find out which platform actually finds cheaper flights, better deals, and more reliable results.",
 
-alternates: {
-canonical:
-"https://www.travelwherever.com/blog/momondo-vs-skyscanner",
-},
+  alternates: {
+    canonical:
+      "https://www.travelwherever.com/blog/momondo-vs-skyscanner",
+  },
 
-openGraph: {
-title:
-"Momondo vs Skyscanner: Tested 20 Routes, Here’s What Won",
-description:
-"We compared Momondo and Skyscanner across 20 real flight searches in 2026 to see which platform actually delivers cheaper fares and better booking reliability.",
-url:
-"https://www.travelwherever.com/blog/momondo-vs-skyscanner",
-siteName: "Travel Wherever",
-locale: "en_US",
-type: "article",
-images: [
-{
-url: "/blog/momondo-vs-skyscanner-og.jpg",
-width: 1200,
-height: 630,
-alt: "Momondo vs Skyscanner comparison",
-},
-],
-},
+  openGraph: {
+    title:
+      "Momondo vs Skyscanner: Tested 20 Routes, Here’s What Won (2026 Guide)",
 
-twitter: {
-card: "summary_large_image",
-title:
-"Momondo vs Skyscanner: Which Finds Better Flight Deals in 2026?",
-description:
-"We tested 20 real flight routes to compare Momondo and Skyscanner on price, reliability, flexibility tools, and booking experience.",
-images: ["/blog/momondo-vs-skyscanner-og.jpg"],
-},
+    description:
+      "See the real results after testing Momondo vs Skyscanner across 20 routes. Which flight search engine actually wins in 2026?",
 
-robots: {
-index: true,
-follow: true,
-},
+    url:
+      "https://www.travelwherever.com/blog/momondo-vs-skyscanner",
+
+    siteName: "Travel Wherever",
+    type: "article",
+    locale: "en_US",
+
+    images: [
+      {
+        url:
+          "https://www.travelwherever.com/momondo-vs-skyscanner.png",
+        width: 1200,
+        height: 630,
+        alt: "Momondo vs Skyscanner comparison tested 20 routes",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+
+    title:
+      "Momondo vs Skyscanner: Tested 20 Routes, Here’s What Won (2026 Guide)",
+
+    description:
+      "We tested both flight search engines across 20 routes to find out which one actually finds cheaper flights in 2026.",
+
+    images: [
+      "https://www.travelwherever.com/images/blog/momondo-vs-skyscanner.png",
+    ],
+  },
 };
+
+<>
+  <JsonLd
+    data={{
+      "@context": "https://schema.org",
+      "@type": "Article",
+
+      headline:
+        "Momondo vs Skyscanner: Tested 20 Routes, Here’s What Won (2026 Guide)",
+
+      description:
+        "A real-world comparison of Momondo vs Skyscanner based on 20 flight searches across multiple international and domestic routes in 2026.",
+
+      image:
+        "https://www.travelwherever.com/momondo-vs-skyscanner.png",
+
+      author: {
+        "@type": "Organization",
+        name: "Travel Wherever",
+      },
+
+      publisher: {
+        "@type": "Organization",
+        name: "Travel Wherever",
+        logo: {
+          "@type": "ImageObject",
+          url: "https://www.travelwherever.com/logo_travelwherever.png",
+        },
+      },
+
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id":
+          "https://www.travelwherever.com/blog/momondo-vs-skyscanner",
+      },
+
+      datePublished: "2026-06-16",
+      dateModified: "2026-06-16",
+    }}
+  />
+
+  <JsonLd
+    data={{
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Which is cheaper, Momondo or Skyscanner?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text:
+              "Skyscanner is generally more consistent, but Momondo sometimes finds cheaper fares through smaller online travel agencies.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Why do Momondo and Skyscanner show different prices?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text:
+              "They pull data from different airlines and travel agencies, and prices can change in real time depending on availability and booking sources.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Which platform is better for international flights?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text:
+              "Momondo often performs well for deeper international searches, while Skyscanner is more consistent and easier to use for most routes.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Did your 20-route test show a clear winner?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text:
+              "Yes, Skyscanner was more reliable overall, but Momondo occasionally found cheaper hidden deals on specific routes.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Should I use both Momondo and Skyscanner?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text:
+              "Yes, comparing both can help you catch pricing differences and find the best possible deal before booking.",
+          },
+        },
+      ],
+    }}
+  />
+
+  <JsonLd
+    data={{
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Home",
+          item: "https://www.travelwherever.com",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Blog",
+          item: "https://www.travelwherever.com/blog",
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          name: "Momondo vs Skyscanner Test",
+          item:
+            "https://www.travelwherever.com/blog/momondo-vs-skyscanner",
+        },
+      ],
+    }}
+  />
+</>
+
 
 <article className="max-w-4xl mx-auto px-4 py-10 text-gray-800 leading-relaxed">
 
 <h1 className="text-3xl md:text-4xl font-bold mb-6">
   Momondo vs Skyscanner: Tested 20 Routes, Here’s What Won
 </h1>
+
+<img
+  src="/momondo-vs-skyscanner.png"
+  alt="Momondo vs skyscannner"
+  className="rounded-2xl w-full object-cover"
+/>
 
   <div className="bg-blue-50 border border-blue-200 p-4 rounded-lg mb-6">
     <p className="font-semibold mb-2">

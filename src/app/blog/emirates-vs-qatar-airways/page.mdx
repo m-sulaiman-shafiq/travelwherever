@@ -1,28 +1,11 @@
+import JsonLd from "@/components/JsonLd";
 import Link from "next/link";
 
 export const metadata = {
-title:
-"Emirates vs Qatar Airways (2026): Which Airline Is Better for Most Travelers?",
+  title: "Emirates vs Qatar Airways: Which Airline Is Better in 2026? (Full Comparison)",
+
 description:
-"Compare Emirates and Qatar Airways across economy class, business class, seat comfort, baggage policies, airport experience, route networks, and overall value to find the best airline in 2026.",
-keywords: [
-"Emirates vs Qatar Airways",
-"Qatar Airways vs Emirates",
-"best airline 2026",
-"Emirates review",
-"Qatar Airways review",
-"Emirates business class",
-"Qsuite business class",
-"Emirates economy class",
-"Qatar Airways economy class",
-"best airline for international flights",
-"Dubai vs Doha airport",
-"long haul flight comparison",
-],
-authors: [{ name: "Travel Wherever" }],
-creator: "Travel Wherever",
-publisher: "Travel Wherever",
-metadataBase: new URL("https://www.travelwherever.com"),
+"Emirates vs Qatar Airways comparison for 2026 covering seats, service, business class, pricing, routes, and overall travel experience. Find out which airline wins.",
 
 alternates: {
 canonical:
@@ -30,39 +13,172 @@ canonical:
 },
 
 openGraph: {
-title:
-"Emirates vs Qatar Airways (2026): Which Airline Wins?",
-description:
-"We compared Emirates and Qatar Airways on economy, business class, food, entertainment, baggage, airports, and overall value. See which airline comes out on top in 2026.",
-url:
-"https://www.travelwherever.com/blog/emirates-vs-qatar-airways",
-siteName: "Travel Wherever",
-locale: "en_US",
-type: "article",
-images: [
-{
-url: "/blog/emirates-vs-qatar-airways-og.jpg",
-width: 1200,
-height: 630,
-alt: "Emirates vs Qatar Airways comparison guide 2026",
-},
-],
+title: "Emirates vs Qatar Airways: Which Airline Is Better in 2026?",
+
+    description:
+      "A detailed 2026 comparison of Emirates and Qatar Airways including cabins, comfort, pricing, routes, and real travel experience insights.",
+
+    url:
+      "https://www.travelwherever.com/blog/emirates-vs-qatar-airways",
+
+    siteName: "Travel Wherever",
+    type: "article",
+    locale: "en_US",
+
+    images: [
+      {
+        url:
+          "https://www.travelwherever.com/images/blog/emirates-vs-qatar-airways.png",
+        width: 1200,
+        height: 630,
+        alt: "Emirates vs Qatar Airways comparison 2026",
+      },
+    ],
+
 },
 
 twitter: {
 card: "summary_large_image",
-title:
-"Emirates vs Qatar Airways (2026): Which Airline Is Better?",
-description:
-"Compare Emirates and Qatar Airways on business class, economy, food, entertainment, airports, and value for money.",
-images: ["/blog/emirates-vs-qatar-airways-og.jpg"],
-},
 
-robots: {
-index: true,
-follow: true,
+    title: "Emirates vs Qatar Airways (2026): Which Is Better?",
+
+    description:
+      "Compare Emirates and Qatar Airways across service, price, comfort, and routes to see which airline performs better in 2026.",
+
+    images: [
+      "https://www.travelwherever.com/images/blog/emirates-vs-qatar-airways.png",
+    ],
+
 },
 };
+
+<>
+  <JsonLd
+    data={{
+      "@context": "https://schema.org",
+      "@type": "Article",
+
+      headline: "Emirates vs Qatar Airways: Which Airline Is Better in 2026?",
+
+      description:
+        "A full 2026 comparison between Emirates and Qatar Airways covering service quality, pricing, fleet, business class, and overall travel experience.",
+
+      image:
+        "https://www.travelwherever.com/images/blog/emirates-vs-qatar-airways.png",
+
+      author: {
+        "@type": "Organization",
+        name: "Travel Wherever",
+      },
+
+      publisher: {
+        "@type": "Organization",
+        name: "Travel Wherever",
+        logo: {
+          "@type": "ImageObject",
+          url: "https://www.travelwherever.com/logo_travelwherever.png",
+        },
+      },
+
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id":
+          "https://www.travelwherever.com/blog/emirates-vs-qatar-airways",
+      },
+
+      datePublished: "2026-06-16",
+      dateModified: "2026-06-16",
+    }}
+
+/>
+
+  <JsonLd
+    data={{
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Which is better, Emirates or Qatar Airways?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text:
+              "Both are premium airlines, but Qatar Airways is often rated slightly higher for business class and service consistency, while Emirates excels in entertainment and route network.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is Emirates cheaper than Qatar Airways?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text:
+              "Prices vary by route and season. Emirates can be slightly more expensive on some routes, while Qatar Airways may offer better value on others.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Which airline has better business class?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text:
+              "Qatar Airways is widely known for its Qsuite business class, which is often considered superior in privacy and comfort compared to Emirates business class.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Which airline has a better fleet?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text:
+              "Emirates operates a larger fleet with a strong A380 presence, while Qatar Airways has a younger and more fuel-efficient fleet overall.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Which is better for long-haul flights?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text:
+              "Both airlines perform extremely well on long-haul routes, but Qatar Airways is often preferred for comfort, while Emirates is preferred for onboard entertainment and experience.",
+          },
+        },
+      ],
+    }}
+
+/>
+
+  <JsonLd
+    data={{
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Home",
+          item: "https://www.travelwherever.com",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Blog",
+          item: "https://www.travelwherever.com/blog",
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          name: "Emirates vs Qatar Airways",
+          item:
+            "https://www.travelwherever.com/blog/emirates-vs-qatar-airways",
+        },
+      ],
+    }}
+
+/>
+
+</>
 
 <article class="max-w-4xl mx-auto px-6 py-10 text-gray-800">
 
@@ -71,7 +187,7 @@ follow: true,
       Emirates vs Qatar Airways (2026): Which Airline Is Actually Better for Most Travelers?
     </h1>
     <img
-src="/emirates-vs-qatar.png"           
+src="/emirates-vs-qatar-airways.png"           
 alt="Emirates airline vs qatar airways"
             className="rounded-2xl w-full h-72 object-cover"
           />

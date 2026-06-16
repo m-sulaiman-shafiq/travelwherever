@@ -1,3 +1,176 @@
+import JsonLd from "@/components/JsonLd";
+import Link from "next/link";
+
+export const metadata = {
+  title: "Karachi to Dubai Flights: Prices, Airlines & 2026 Travel Guide",
+
+  description:
+    "Find the latest Karachi to Dubai flight prices, airlines, schedules, and travel tips for 2026. Compare fares, flight duration, and booking insights for this popular UAE route.",
+
+  alternates: {
+    canonical: "https://www.travelwherever.com/blog/karachi-to-dubai-flights",
+  },
+
+  openGraph: {
+    title: "Karachi to Dubai Flights: Prices, Airlines & 2026 Guide",
+
+    description:
+      "Complete guide to Karachi to Dubai flights in 2026 including ticket prices, airlines, flight duration, and booking tips for travelers.",
+
+    url: "https://www.travelwherever.com/blog/karachi-to-dubai-flights",
+
+    siteName: "Travel Wherever",
+    type: "article",
+    locale: "en_US",
+
+    images: [
+      {
+        url:
+          "https://www.travelwherever.com/images/blog/karachi-to-dubai-flights.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Karachi to Dubai flights 2026 guide",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+
+    title: "Karachi to Dubai Flights: Prices & 2026 Guide",
+
+    description:
+      "Compare Karachi to Dubai flights, airlines, and ticket prices in 2026. Find the cheapest and fastest options easily.",
+
+    images: [
+      "https://www.travelwherever.com/images/blog/karachi-to-dubai-flights.jpg",
+    ],
+  },
+};
+
+<>
+  <JsonLd
+    data={{
+      "@context": "https://schema.org",
+      "@type": "Article",
+
+      headline: "Karachi to Dubai Flights: Prices, Airlines & 2026 Guide",
+
+      description:
+        "A complete guide to Karachi to Dubai flights including pricing trends, airlines, schedules, and travel tips for 2026.",
+
+      image:
+        "https://www.travelwherever.com/images/blog/karachi-to-dubai-flights.jpg",
+
+      author: {
+        "@type": "Organization",
+        name: "Travel Wherever",
+      },
+
+      publisher: {
+        "@type": "Organization",
+        name: "Travel Wherever",
+        logo: {
+          "@type": "ImageObject",
+          url: "https://www.travelwherever.com/logo_travelwherever.png",
+        },
+      },
+
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id": "https://www.travelwherever.com/blog/karachi-to-dubai-flights",
+      },
+
+      datePublished: "2026-06-01",
+      dateModified: "2026-06-16",
+    }}
+  />
+
+  <JsonLd
+    data={{
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "How long is a flight from Karachi to Dubai?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text:
+              "The average direct flight from Karachi to Dubai takes around 2 to 2.5 hours depending on airline and weather conditions.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Which airlines fly from Karachi to Dubai?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text:
+              "Airlines such as Emirates, flydubai, PIA, Airblue, Air Sial, Air Arabia, and other regional carriers operate flights on this route.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How much is a Karachi to Dubai ticket in 2026?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text:
+              "Prices vary depending on season and airline, but economy fares generally start from lower budget options and rise significantly during peak travel periods.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is there a direct flight from Karachi to Dubai?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text:
+              "Yes, multiple airlines operate daily direct flights between Karachi (KHI) and Dubai (DXB).",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What is the distance between Karachi and Dubai?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text:
+              "The aerial distance between Karachi and Dubai is approximately 1,190 km, making it a short international flight of about 2–2.5 hours.",
+          },
+        },
+      ],
+    }}
+  />
+
+  <JsonLd
+    data={{
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Home",
+          item: "https://www.travelwherever.com",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Blog",
+          item: "https://www.travelwherever.com/blog",
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          name: "Karachi to Dubai Flights",
+          item: "https://www.travelwherever.com/blog/karachi-to-dubai-flights",
+        },
+      ],
+    }}
+  />
+</>
+
+
 <article className="max-w-4xl mx-auto px-4 md:px-6 py-10 text-gray-800">
 
   <header className="mb-12">
@@ -8,14 +181,19 @@
     <h1 className="text-4xl md:text-5xl font-black tracking-tight text-gray-900 leading-tight mb-6">
       Karachi to Dubai Airline Comparison (2026): Which Airline Is Actually Worth Booking?
     </h1>
+    <img
+  src="/karachi-to-dubai-flights.jpg"
+  alt="Karachi to Dubai flights"
+  className="rounded-2xl h-[550px] object-cover"
+/>
 
-    <p className="text-xl leading-8 text-gray-600">
+    <p className="text-xl pt-4 leading-8 text-gray-600">
       We compared Emirates, Flydubai, PIA, Air Arabia, Qatar Airways, and Gulf Air to see which airline actually offers the best value on the Karachi to Dubai route in 2026.
     </p>
 
   </header>
 
-  <section className="space-y-6 text-[17px] leading-8">
+  <section className="text-[17px] leading-8">
     <p>
       The Karachi to Dubai route is one of the busiest international flight corridors in the region.
     </p>
