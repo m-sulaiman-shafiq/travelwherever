@@ -125,6 +125,14 @@ const blogs = [
     readTime: "5 min read",
     image: "http://travelwherever.com/tuesday-flight-booking-myth.png",
   },
+  {
+  title: "Cheapest Flights Between US World Cup Host Cities (2026 Guide)",
+  slug: "cheapest-flight-worldcup-host-cities",
+  category: "Flight Comparison",
+  excerpt: "Compare the cheapest flights between FIFA World Cup 2026 U.S. host cities and save on multi-city travel.",
+  readTime: "9 min read",
+  image: "https://travelwherever.com/cheapest-flight-worldcup-host-cities.png",
+},
 ];
 
 export default function BlogPage() {
