@@ -126,13 +126,26 @@ const blogs = [
     image: "http://travelwherever.com/tuesday-flight-booking-myth.png",
   },
   {
-  title: "Cheapest Flights Between US World Cup Host Cities (2026 Guide)",
-  slug: "cheapest-flight-worldcup-host-cities",
-  category: "Flight Comparison",
-  excerpt: "Compare the cheapest flights between FIFA World Cup 2026 U.S. host cities and save on multi-city travel.",
-  readTime: "9 min read",
-  image: "https://travelwherever.com/cheapest-flight-worldcup-host-cities.png",
-},
+    title: "Cheapest Flights Between US World Cup Host Cities (2026 Guide)",
+    slug: "cheapest-flight-worldcup-host-cities",
+    category: "Flight Comparison",
+    excerpt:
+      "Compare the cheapest flights between FIFA World Cup 2026 U.S. host cities and save on multi-city travel.",
+    readTime: "9 min read",
+    image:
+      "https://travelwherever.com/cheapest-flight-worldcup-host-cities.png",
+  },
+  {
+    title:
+      "Flying Between the World Cup 2026 Semifinals: Dallas to Atlanta Guide",
+    slug: "flying-between-worldcup-2026-semi-finals",
+    category: "World Cup Travel",
+    excerpt:
+      "Planning to attend both FIFA World Cup 2026 semifinals? Learn the fastest way to fly from Dallas to Atlanta, including flight times, airlines, airports, booking tips, and estimated fares.",
+    readTime: "8 min read",
+    image:
+      "https://travelwherever.com/flying-between-worldcup-2026-semi-finals.png",
+  },
 ];
 
 export default function BlogPage() {
