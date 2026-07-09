@@ -146,6 +146,17 @@ const blogs = [
     image:
       "https://travelwherever.com/flying-between-worldcup-2026-semi-finals.png",
   },
+  {
+    title:
+      "Best Airports and Flights for the World Cup Final in New York / New Jersey",
+    slug: "best-flights-to-fifa-2026-final-new-york-new-jersey-metlife-stadium",
+    category: "World Cup Travel",
+    excerpt:
+      "Discover the best airports, flight options, and travel tips for attending the FIFA World Cup 2026 Final in New York/New Jersey.",
+    readTime: "8 min read",
+    image:
+      "https://travelwherever.com/best-flights-to-fifa-2026-final-new-york-new-jersey-metlife-stadium.png",
+  },
 ];
 
 export default function BlogPage() {
