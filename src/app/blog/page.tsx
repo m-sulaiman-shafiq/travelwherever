@@ -81,7 +81,7 @@ const blogs = [
     category: "Airlines Comparison",
     excerpt: "Which is better for luxury travel: Emirates or Qatar Airways?",
     readTime: "5 min read",
-    image: "http://travelwherever.com/emirates-vs-qatar.png",
+    image: "http://travelwherever.com/emirates-vs-qatar-airways.png",
   },
   {
     title: "Pakistan to UK Cheapest Flights",
