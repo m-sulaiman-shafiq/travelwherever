@@ -157,6 +157,17 @@ const blogs = [
     image:
       "https://travelwherever.com/best-flights-to-fifa-2026-final-new-york-new-jersey-metlife-stadium.png",
   },
+  {
+    title:
+      "Kiwi.com vs Skyscanner: Hidden Fees, Self-Transfer, and Real Prices",
+    slug: "kiwi-com-vs-skyscanner",
+    category: "Flight Comparisons",
+    excerpt:
+      "Trying to choose between Kiwi.com and Skyscanner? Compare hidden fees, self-transfer risks, real ticket prices, customer support, and booking experience to find the best platform for your next trip.",
+    readTime: "7 min read",
+    image:
+      "https://travelwherever.com/kiwi-com-vs-skyscanner-hidden-fees-self-transfer-real-prices.png",
+  },
 ];
 
 export default function BlogPage() {
