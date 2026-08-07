@@ -166,7 +166,7 @@ const blogs = [
       "Trying to choose between Kiwi.com and Skyscanner? Compare hidden fees, self-transfer risks, real ticket prices, customer support, and booking experience to find the best platform for your next trip.",
     readTime: "7 min read",
     image:
-      "https://travelwherever.com/kiwi-com-vs-skyscanner-hidden-fees-self-transfer-real-prices.png",
+      "https://travelwherever.com/kiwi-com-vs-skyscanner.png",
   },
 ];
 
