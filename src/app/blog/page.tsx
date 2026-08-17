@@ -165,8 +165,16 @@ const blogs = [
     excerpt:
       "Trying to choose between Kiwi.com and Skyscanner? Compare hidden fees, self-transfer risks, real ticket prices, customer support, and booking experience to find the best platform for your next trip.",
     readTime: "7 min read",
-    image:
-      "https://travelwherever.com/kiwi-com-vs-skyscanner.png",
+    image: "https://travelwherever.com/kiwi-com-vs-skyscanner.png",
+  },
+  {
+    title: "Best Time of Day to Book Flights for the Lowest Price (2026 Guide)",
+    slug: "best-time-of-day-to-book-flights",
+    category: "Flight Booking Tips",
+    excerpt:
+      "What is the best time of day to book flights for the lowest price? Discover whether midnight, early morning, or Tuesday really saves money and learn what actually helps you find cheaper flights in 2026.",
+    readTime: "6 min read",
+    image: "https://travelwherever.com/best-time-of-day-to-book-flights.png",
   },
 ];
 
