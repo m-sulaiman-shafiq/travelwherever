@@ -35,7 +35,7 @@ const blogs = [
     image: "http://travelwherever.com/flight-prices-going-up.jpg",
   },
   {
-    title: "How Middle East Conflict Imacted Flight Prices",
+    title: "How Middle East Conflict Impacted Flight Prices",
     slug: "middle-east-war-flight-prices",
     category: "Travel News",
     excerpt:
