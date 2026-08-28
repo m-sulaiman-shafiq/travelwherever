@@ -176,6 +176,15 @@ const blogs = [
     readTime: "6 min read",
     image: "https://travelwherever.com/best-time-of-day-to-book-flights.png",
   },
+  {
+    title: "Hopper vs Google Flights: Is the Price Prediction Accurate? (2026)",
+    slug: "hopper-vs-google-flights",
+    category: "Flight Price Comparison",
+    excerpt:
+      "Is Hopper's flight price prediction really accurate? Compare Hopper vs Google Flights to see how their price forecasts, alerts, historical data, and booking tools can help you find better airfare in 2026.",
+    readTime: "7 min read",
+    image: "https://travelwherever.com/hopper-vs-google-flights.png",
+  },
 ];
 
 export default function BlogPage() {
