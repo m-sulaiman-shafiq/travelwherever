@@ -181,7 +181,7 @@ const blogs = [
     slug: "hopper-vs-google-flights",
     category: "Flight Price Comparison",
     excerpt:
-      "Is Hopper's flight price prediction really accurate? Compare Hopper vs Google Flights to see how their price forecasts, alerts, historical data, and booking tools can help you find better airfare in 2026.",
+      "Does Hidden City Ticketing Still Work in 2026?",
     readTime: "7 min read",
     image: "https://travelwherever.com/hopper-vs-google-flights.png",
   },
