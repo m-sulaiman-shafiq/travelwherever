@@ -8,9 +8,22 @@ type Flight = {
   price: number;
   departure: string;
   arrival: string;
-  duration: number;
+  duration: string;
   from: string;
   to: string;
+};
+
+type ApiFlight = {
+  airline: { code: string };
+  price: { raw: number };
+  schedule: { departure: string; arrival: string; duration: string };
+  route: { origin: string; destination: string };
+};
+
+type FlightsResponse = {
+  success?: boolean;
+  data?: ApiFlight[];
+  error?: string;
 };
 
 export default function FlightsClient() {
@@ -24,6 +37,8 @@ export default function FlightsClient() {
   // ✅ State
   const [flights, setFlights] = useState<Flight[]>([]);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+  const [retryCount, setRetryCount] = useState(0);
 
   // ✅ Extract city (for display)
   const extractCity = (value: string) => {
@@ -40,57 +55,67 @@ export default function FlightsClient() {
   const to = extractCode(rawTo);
 
   useEffect(() => {
+    if (!from || !to || !date) {
+      setFlights([]);
+      setError("Select an origin, destination, and departure date to search.");
+      setLoading(false);
+      return;
+    }
+
+    let cancelled = false;
+
     const fetchFlights = async () => {
       try {
         setLoading(true);
+        setError(null);
 
         const res = await fetch(
-          `/api/flights?from=${from}&to=${to}&date=${date}`,
+          `/api/flights?from=${encodeURIComponent(from)}&to=${encodeURIComponent(to)}&date=${encodeURIComponent(date)}`,
         );
-        const result = await res.json();
+        const result: FlightsResponse = await res.json();
 
-        // Since your route.ts now returns { success: true, data: [...] }
-        if (result?.success && result.data) {
-          // We map the new beautiful structure to your Flight type
-          const mappedFlights = result.data.map((item: any) => ({
-            airline: item.airline.code,
-            logo: item.airline.logo, // Added logo
-            price: item.price.raw,
-            departure: item.schedule.departure,
-            arrival: item.schedule.arrival,
-            duration: item.schedule.duration, // Already formatted as "Xh Ym"
-            from: item.route.origin,
-            to: item.route.destination,
-          }));
+        if (!res.ok) {
+          throw new Error(result.error || "Unable to load flights right now.");
+        }
 
-          setFlights(mappedFlights);
-        } else {
-          setFlights([]);
+        if (!result.success || !Array.isArray(result.data)) {
+          throw new Error("Unable to load flights right now.");
+        }
+
+        if (!cancelled) {
+          setFlights(
+            result.data.map((item) => ({
+              airline: item.airline.code,
+              price: item.price.raw,
+              departure: item.schedule.departure,
+              arrival: item.schedule.arrival,
+              duration: item.schedule.duration,
+              from: item.route.origin,
+              to: item.route.destination,
+            })),
+          );
         }
       } catch (error) {
         console.error("Fetch error:", error);
-        setFlights([]);
+        if (!cancelled) {
+          setFlights([]);
+          setError(
+            error instanceof Error
+              ? error.message
+              : "Unable to load flights right now.",
+          );
+        }
       } finally {
-        setLoading(false);
+        if (!cancelled) setLoading(false);
       }
     };
 
-    if (from && to && date) fetchFlights();
-  }, [from, to, date]);
+    fetchFlights();
 
-  const formatTime = (dateString: string) => {
-    if (!dateString) return "";
-    return new Date(dateString).toLocaleTimeString([], {
-      hour: "2-digit",
-      minute: "2-digit",
-    });
-  };
-
-  const formatDuration = (mins: number) => {
-    const h = Math.floor(mins / 60);
-    const m = mins % 60;
-    return `${h}h ${m}m`;
-  };
+    return () => {
+      cancelled = true;
+    };
+  }, [from, to, date, retryCount]);
 
   return (
     <div className="max-w-3xl mx-auto p-4">
@@ -103,6 +128,23 @@ export default function FlightsClient() {
       {/* ✅ Loading */}
       {loading ? (
         <p>Loading flights...</p>
+      ) : error ? (
+        <div>
+          <p>{error}</p>
+          {from && to && date ? (
+            <button
+              type="button"
+              className="mt-3 text-blue-600 underline"
+              onClick={() => setRetryCount((count) => count + 1)}
+            >
+              Try again
+            </button>
+          ) : (
+            <a href="/" className="mt-3 inline-block text-blue-600 underline">
+              Return to flight search
+            </a>
+          )}
+        </div>
       ) : flights.length === 0 ? (
         <p>No flights found.</p>
       ) : (
