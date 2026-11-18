@@ -100,7 +100,7 @@ const blogs = [
     image: "http://travelwherever.com/how-far-in-advance-to-book-a-flight.png",
   },
   {
-    title: "Hidden City Ticketing in 2027: Does It Still Work and Is It Risky?",
+    title: "Hidden City Ticketing in 2026: Does It Still Work and Is It Risky?",
     slug: "hidden-city-ticketing",
     category: "When/ How To Book",
     excerpt: "Booking ticket to a neighbouring city.",
@@ -109,7 +109,7 @@ const blogs = [
   },
   {
     title:
-      "Kayak vs Google Flights for International Travel: Which Flight Search Tool Is Better in 2027?",
+      "Kayak vs Google Flights for International Travel: Which Flight Search Tool Is Better in 2026?",
     slug: "kayak-vs-google-flights-for-international-travel",
     category: "Flights somparison",
     excerpt: "Either Kayak or Google is better for flight comparison",
@@ -126,36 +126,36 @@ const blogs = [
     image: "http://travelwherever.com/tuesday-flight-booking-myth.png",
   },
   {
-    title: "Cheapest Flights Between US World Cup Host Cities (2027 Guide)",
+    title: "Cheapest Flights Between US World Cup Host Cities (2026 Guide)",
     slug: "cheapest-flight-worldcup-host-cities",
     category: "Flight Comparison",
     excerpt:
-      "Compare the cheapest flights between FIFA World Cup 2027 U.S. host cities and save on multi-city travel.",
+      "Compare the cheapest flights between FIFA World Cup 2026 U.S. host cities and save on multi-city travel.",
     readTime: "9 min read",
     image:
       "https://travelwherever.com/cheapest-flight-worldcup-host-cities.png",
   },
   {
     title:
-      "Flying Between the World Cup 2027 Semifinals: Dallas to Atlanta Guide",
-    slug: "flying-between-worldcup-2027-semi-finals",
+      "Flying Between the World Cup 2026 Semifinals: Dallas to Atlanta Guide",
+    slug: "flying-between-worldcup-2026-semi-finals",
     category: "World Cup Travel",
     excerpt:
-      "Planning to attend both FIFA World Cup 2027 semifinals? Learn the fastest way to fly from Dallas to Atlanta, including flight times, airlines, airports, booking tips, and estimated fares.",
+      "Planning to attend both FIFA World Cup 2026 semifinals? Learn the fastest way to fly from Dallas to Atlanta, including flight times, airlines, airports, booking tips, and estimated fares.",
     readTime: "8 min read",
     image:
-      "https://travelwherever.com/flying-between-worldcup-2027-semi-finals.png",
+      "https://travelwherever.com/flying-between-worldcup-2026-semi-finals.png",
   },
   {
     title:
       "Best Airports and Flights for the World Cup Final in New York / New Jersey",
-    slug: "best-flights-to-fifa-2027-final-new-york-new-jersey-metlife-stadium",
+    slug: "best-flights-to-fifa-2026-final-new-york-new-jersey-metlife-stadium",
     category: "World Cup Travel",
     excerpt:
-      "Discover the best airports, flight options, and travel tips for attending the FIFA World Cup 2027 Final in New York/New Jersey.",
+      "Discover the best airports, flight options, and travel tips for attending the FIFA World Cup 2026 Final in New York/New Jersey.",
     readTime: "8 min read",
     image:
-      "https://travelwherever.com/best-flights-to-fifa-2027-final-new-york-new-jersey-metlife-stadium.png",
+      "https://travelwherever.com/best-flights-to-fifa-2026-final-new-york-new-jersey-metlife-stadium.png",
   },
   {
     title:
@@ -168,19 +168,19 @@ const blogs = [
     image: "https://travelwherever.com/kiwi-com-vs-skyscanner.png",
   },
   {
-    title: "Best Time of Day to Book Flights for the Lowest Price (2027 Guide)",
+    title: "Best Time of Day to Book Flights for the Lowest Price (2026 Guide)",
     slug: "best-time-of-day-to-book-flights",
     category: "Flight Booking Tips",
     excerpt:
-      "What is the best time of day to book flights for the lowest price? Discover whether midnight, early morning, or Tuesday really saves money and learn what actually helps you find cheaper flights in 2027.",
+      "What is the best time of day to book flights for the lowest price? Discover whether midnight, early morning, or Tuesday really saves money and learn what actually helps you find cheaper flights in 2026.",
     readTime: "6 min read",
     image: "https://travelwherever.com/best-time-of-day-to-book-flights.png",
   },
   {
-    title: "Hopper vs Google Flights: Is the Price Prediction Accurate? (2027)",
+    title: "Hopper vs Google Flights: Is the Price Prediction Accurate? (2026)",
     slug: "hopper-vs-google-flights",
     category: "Flight Price Comparison",
-    excerpt: "Does Hidden City Ticketing Still Work in 2027?",
+    excerpt: "Does Hidden City Ticketing Still Work in 2026?",
     readTime: "7 min read",
     image: "https://travelwherever.com/hopper-vs-google-flights.png",
   },
