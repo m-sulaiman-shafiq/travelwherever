@@ -21,7 +21,7 @@ const faqs = [
     a: "All bookings are handled by third-party providers. Please contact them directly for cancellations or changes.",
   },
   {
-    q: "Is my personal data?",
+    q: "Is my personal data safe when using TravelWherever?",
     a: "Yes. We follow industry practices to protect your data. You can read more in our Privacy Policy.",
   },
   {

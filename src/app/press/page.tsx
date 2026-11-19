@@ -61,7 +61,7 @@ export default function PressPage() {
         </section>
 
         {/* MEDIA ASSETS */}
-        <section className="mb-14">
+        {/* <section className="mb-14">
           <h2 className="text-2xl font-semibold mb-4">Media Assets</h2>
 
           <div className="grid md:grid-cols-2 gap-6">
@@ -85,17 +85,22 @@ export default function PressPage() {
               </a>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* NEWS / UPDATES */}
         <section className="mb-14">
           <h2 className="text-2xl font-semibold mb-4">Latest Updates</h2>
 
-          <div className="bg-white p-6 rounded-2xl shadow-sm">
+          <div className="bg-white p-6 rounded-2xl shadow-sm space-y-4">
             <p className="text-gray-600">
-              No press releases have been published yet. TravelWherever is an
-              early-stage platform currently focused on product development and
-              improving flight search experience.
+              Stay informed about what's happening at TravelWherever. We're
+              continuously enhancing our flight comparison experience, expanding
+              travel resources, and working on new ways to make planning
+              international journeys simpler and more convenient.
+            </p>
+            <p className="text-gray-600">
+              Check back here for company announcements, product updates,
+              partnerships, and other important news.
             </p>
           </div>
         </section>
